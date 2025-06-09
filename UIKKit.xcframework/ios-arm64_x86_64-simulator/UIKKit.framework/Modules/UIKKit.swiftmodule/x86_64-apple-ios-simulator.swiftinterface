@@ -1,0 +1,356 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name UIKKit
+// swift-module-flags-ignorable:  -interface-compiler-version 6.1.2
+import AVFoundation
+import AdSupport
+import AppTrackingTransparency
+import SystemConfiguration.CaptiveNetwork
+import ContactsUI
+import CoreLocation
+import CoreTelephony
+import Foundation
+import StoreKit
+import Swift
+import SystemConfiguration
+import UIKit
+import WebKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@_hasMissingDesignatedInitializers public class UIKKitHelper {
+  public static let shared: UIKKit.UIKKitHelper
+  public func setCustom(with imageView: UIKit.UIImageView, didClick: @escaping () -> Swift.Void)
+  public func customShow()
+  public func customHide()
+  public func getImage(inViewController vc: UIKit.UIViewController, result: @escaping (_ image: UIKit.UIImage) -> Swift.Void)
+  public func getContact(inViewController vc: UIKit.UIViewController, result: @escaping (_ fullName: Swift.String?, _ phoneNumber: Swift.String?) -> Swift.Void)
+  public func setSettingAlert(inViewController vc: UIKit.UIViewController, title: Swift.String, message: Swift.String = "", buttonText: Swift.String = "OK")
+  public func setShareAppActivities(vc: UIKit.UIViewController, sourceView: UIKit.UIView, file: Any)
+  public func openUrl(urlString: Swift.String)
+  public func openReview()
+  public func call(number: Swift.String)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class DeviceIdHelper : ObjectiveC.NSObject {
+  public static let shared: UIKKit.DeviceIdHelper
+  public func requestIDFA(result: @escaping (_ idfa: Swift.String) -> Swift.Void)
+  public func getIDFV() -> Swift.String
+  public func getIDFA() -> Swift.String
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class KTextField : UIKit.UITextField {
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func deleteBackward()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension UIKit.UITextField {
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency dynamic public var placeHolderColor: UIKit.UIColor? {
+    @objc get
+    @objc set
+  }
+}
+extension UIKit.UIDevice {
+  @_Concurrency.MainActor @preconcurrency public static var totalDiskSize: Swift.Int {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public static var freeDiskSize: Swift.Int {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public static var getTotalMemorySize: Swift.Int {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public static var getUsedMemorySize: Swift.Int {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public static func getAvailableMemorySize() -> Swift.Int
+  @_Concurrency.MainActor @preconcurrency public static var batteryNumber: Swift.Int {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public static var batteryIsFull: Swift.Int {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public static var batteryIsCharging: Swift.Int {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public static var isVPN: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public static var width: CoreFoundation.CGFloat {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public static var height: CoreFoundation.CGFloat {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public static var nativeWidth: CoreFoundation.CGFloat {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public static var nativeHeight: CoreFoundation.CGFloat {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public static var nativeSize: CoreFoundation.CGFloat {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public static var safeTop: CoreFoundation.CGFloat {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public static var safeBottom: CoreFoundation.CGFloat {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public static var isSimulator: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public static var isJailbroken: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public static var languageCode: Swift.String {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public static var phoneType: UIKit.UIUserInterfaceIdiom {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public static var timeZone: Swift.String {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public static var release: Swift.String {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public static var networkType: Swift.String {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public static var wifiName: Swift.String {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public static func wifiMac(isFormat: Swift.Bool = true) -> Swift.String
+  @_Concurrency.MainActor @preconcurrency public static var isProxy: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public static var deviceIpAddress: Swift.String {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public static var appName: Swift.String {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public static var boundelId: Swift.String {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public static var getOperator: Swift.String {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public static var deviceIdentifier: Swift.String {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public static var deviceModelName: Swift.String {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class KUIViewController : UIKit.UIViewController, UIKit.UIGestureRecognizerDelegate {
+  @_Concurrency.MainActor @preconcurrency public var navigationPopOpen: Swift.Bool
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor @preconcurrency @objc public func gestureRecognizerShouldBegin(_ gestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency public func back()
+  @_Concurrency.MainActor @preconcurrency public func backAction()
+  @_Concurrency.MainActor @preconcurrency public func fullPresent(_ targetFile: UIKit.UIViewController)
+  @_Concurrency.MainActor @preconcurrency public func dealWebMessage(web: WebKit.WKWebView, wkMessage: WebKit.WKScriptMessage, dict: [Swift.String : Any], webScripList: [Swift.String])
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func touchesBegan(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension UIKit.UIViewController {
+  @_Concurrency.MainActor @preconcurrency public func popGestureClose()
+  @_Concurrency.MainActor @preconcurrency public func popGestureOpen()
+  @_Concurrency.MainActor @preconcurrency public func removeSelf()
+  @_Concurrency.MainActor @preconcurrency public var topVC: UIKit.UIViewController? {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class KTableViewCell : UIKit.UITableViewCell, UIKit.UITextFieldDelegate {
+  @_Concurrency.MainActor @preconcurrency public var cellEmailOffsetX: CoreFoundation.CGFloat
+  @_Concurrency.MainActor @preconcurrency public var emailButtonHeight: CoreFoundation.CGFloat
+  @_Concurrency.MainActor @preconcurrency public var emailButtonLeftMargin: CoreFoundation.CGFloat
+  @_Concurrency.MainActor @preconcurrency public var emailButtonAttrColor: UIKit.UIColor?
+  @_Concurrency.MainActor @preconcurrency public var emailButtonTextColor: UIKit.UIColor
+  @_Concurrency.MainActor @preconcurrency public var emailButtonFirstColor: UIKit.UIColor
+  @_Concurrency.MainActor @preconcurrency public var emailButtonFont: UIKit.UIFont
+  @_Concurrency.MainActor @preconcurrency public var emailButtontitleLeft: CoreFoundation.CGFloat
+  @_Concurrency.MainActor @preconcurrency public var emailFootterArray: [Swift.String]
+  @_Concurrency.MainActor @preconcurrency public var emailHasLine: Swift.Bool
+  @_Concurrency.MainActor @preconcurrency public var emailLineColor: UIKit.UIColor
+  @_Concurrency.MainActor @preconcurrency public var didEndFill: (Swift.String) -> Swift.Void
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func awakeFromNib()
+  @_Concurrency.MainActor @preconcurrency public func setEmailFiled(textFiled: UIKit.UITextField, tableView: UIKit.UITableView)
+  @_Concurrency.MainActor @preconcurrency @objc public func textFieldShouldReturn(_ textField: UIKit.UITextField) -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency @objc public func textFieldDidEndEditing(_ textField: UIKit.UITextField)
+  @_Concurrency.MainActor @preconcurrency @objc public func textFieldDidBeginEditing(_ textField: UIKit.UITextField)
+  @_Concurrency.MainActor @preconcurrency @objc public func textField(_ textField: UIKit.UITextField, shouldChangeCharactersIn range: Foundation.NSRange, replacementString string: Swift.String) -> Swift.Bool
+  @available(iOS 3.0, *)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(style: UIKit.UITableViewCell.CellStyle, reuseIdentifier: Swift.String?)
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension UIKit.UITableViewCell {
+  @_Concurrency.MainActor @preconcurrency public func indexPath(in tableView: UIKit.UITableView? = nil) -> Foundation.IndexPath?
+  @_Concurrency.MainActor @preconcurrency public func findTableView() -> UIKit.UITableView?
+  @_Concurrency.MainActor @preconcurrency public func scrollNext()
+  @_Concurrency.MainActor @preconcurrency public func scrollTop()
+}
+@objc @_inheritsConvenienceInitializers public class KToast : ObjectiveC.NSObject {
+  public func show(_ msg: Swift.String, delay: CoreFoundation.CGFloat = 0.2)
+  public func loading(_ duration: Foundation.TimeInterval = 30, tintColor: UIKit.UIColor = .gray, backgroundColor: UIKit.UIColor = .clear)
+  public func hideLoading()
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency public static func blankView(width: CoreFoundation.CGFloat = UIDevice.width, height: CoreFoundation.CGFloat = UIDevice.height, backgroundColor: UIKit.UIColor = .clear) -> UIKit.UIView
+  @_Concurrency.MainActor @preconcurrency public func setShadow(_ color: UIKit.UIColor = UIColor.rgba(224, 224, 224), opacity: Swift.Float = 0.5, offset: CoreFoundation.CGSize = .zero)
+  @_Concurrency.MainActor @preconcurrency public func setBorder(radius: CoreFoundation.CGFloat, color: UIKit.UIColor, width: CoreFoundation.CGFloat)
+  @_Concurrency.MainActor @preconcurrency public func setCorner(radius: CoreFoundation.CGFloat, masks: [UIKKit.KCornerMask] = [])
+  @_Concurrency.MainActor @preconcurrency public func setGradient(startPoint: CoreFoundation.CGPoint = CGPoint(x: 0.5, y: 0), endPoint: CoreFoundation.CGPoint = CGPoint(x: 0.5, y: 1), colors: [UIKit.UIColor])
+  @_Concurrency.MainActor @preconcurrency public func removeAllLayers()
+  @_Concurrency.MainActor @preconcurrency public func addTap(method: @escaping () -> Swift.Void)
+  @_Concurrency.MainActor @preconcurrency public func setCenter(superView: UIKit.UIView)
+  @_Concurrency.MainActor @preconcurrency public func setBoardLine(width: CoreFoundation.CGFloat, length: CoreFoundation.CGFloat, space: CoreFoundation.CGFloat, cornerRadius: CoreFoundation.CGFloat, color: UIKit.UIColor)
+  @_Concurrency.MainActor @preconcurrency public func addEmitter(imageNamePre: Swift.String, imageNumber: Swift.Int)
+  @_Concurrency.MainActor @preconcurrency public func createHeartEffect(at position: CoreFoundation.CGPoint, in superView: UIKit.UIView, image: UIKit.UIImage, size: CoreFoundation.CGSize = CGSize(width: 50, height: 50))
+  @_Concurrency.MainActor @preconcurrency public func removeAllSubviews()
+  @_Concurrency.MainActor @preconcurrency public func transPan(duration: CoreFoundation.CGFloat = 0.25, size: CoreFoundation.CGFloat)
+  @_Concurrency.MainActor @preconcurrency public func transScale(duration: CoreFoundation.CGFloat = 0.25, x: CoreFoundation.CGFloat, y: CoreFoundation.CGFloat)
+  @_Concurrency.MainActor @preconcurrency public func transLeftRight(duration: CoreFoundation.CGFloat = 0.25)
+  @_Concurrency.MainActor @preconcurrency public func transUpDown(duration: CoreFoundation.CGFloat = 0.25)
+  @_Concurrency.MainActor @preconcurrency public func transRotation(duration: CoreFoundation.CGFloat = 0.25, angle: CoreFoundation.CGFloat = CGFloat.pi/2)
+  @_Concurrency.MainActor @preconcurrency public func transInRotation(duration: CoreFoundation.CGFloat = 0.25, angle: CoreFoundation.CGFloat = CGFloat.pi/2)
+  @_Concurrency.MainActor @preconcurrency public var x: CoreFoundation.CGFloat {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency public var y: CoreFoundation.CGFloat {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency public var w: CoreFoundation.CGFloat {
+    get
+    set
+  }
+  @_Concurrency.MainActor @preconcurrency public var h: CoreFoundation.CGFloat {
+    get
+    set
+  }
+}
+extension Swift.String {
+  public func getDesensitizedPhoneNumber(rePlace: Swift.String = "*") -> Swift.String
+  public func highlightedNumbers(withColor color: UIKit.UIColor) -> Foundation.NSAttributedString
+  public func setArribute(targetText: Swift.String, color: UIKit.UIColor?, font: UIKit.UIFont?, underline: Swift.Bool = false) -> Foundation.NSAttributedString
+  public func isEqualTo(_ string: Swift.String) -> Swift.Bool
+  public func toDict2() -> [Swift.String : Any]?
+  public func toDict() -> [Swift.String : Any]?
+  public func getFileAsData() -> Foundation.Data?
+  public func readFileAsDict() -> [Swift.String : Any]?
+  public func readFileAsArray() -> [Any]?
+  public func readFileAsJSON() -> Swift.String?
+}
+extension UIKit.UILabel {
+  @_Concurrency.MainActor @preconcurrency public func setPrivacy(_ lineColor: UIKit.UIColor, _ hasLine: Swift.Bool = false, _ type: Swift.Int = 0)
+  @_Concurrency.MainActor @preconcurrency public func setFirst(content: Swift.String, withFont font: UIKit.UIFont)
+  @_Concurrency.MainActor @preconcurrency public func getLabelHeight(width: CoreFoundation.CGFloat) -> CoreFoundation.CGFloat
+}
+extension UIKit.UIButton {
+  @_Concurrency.MainActor @preconcurrency public func setAfterTitle(after: Swift.String = "@", color: UIKit.UIColor)
+  @_Concurrency.MainActor @preconcurrency public func setFrontTitle(front: Swift.String = "@", color: UIKit.UIColor)
+  @_Concurrency.MainActor @preconcurrency public var text: Swift.String {
+    get
+    set
+  }
+}
+extension CoreFoundation.CGFloat {
+  public var intValue: Swift.Int {
+    get
+  }
+  public var stringValue: Swift.String {
+    get
+  }
+  public func kScale() -> CoreFoundation.CGFloat
+}
+extension Swift.Int {
+  public var stringValue: Swift.String {
+    get
+  }
+}
+extension Swift.Int64 {
+  public var stringValue: Swift.String {
+    get
+  }
+  public var intValue: Swift.Int {
+    get
+  }
+}
+extension Swift.UInt64 {
+  public var stringValue: Swift.String {
+    get
+  }
+  public var intValue: Swift.Int {
+    get
+  }
+}
+extension UIKit.UIFont {
+  public static func pingFangSC_regular(_ size: CoreFoundation.CGFloat) -> UIKit.UIFont
+  public static func pingFangSC_medium(_ size: CoreFoundation.CGFloat) -> UIKit.UIFont
+  public static func pingFangSC_semibold(_ size: CoreFoundation.CGFloat) -> UIKit.UIFont
+  public static func all()
+}
+extension UIKit.UIColor {
+  public static func rgba(_ r: CoreFoundation.CGFloat, _ g: CoreFoundation.CGFloat, _ b: CoreFoundation.CGFloat, _ a: CoreFoundation.CGFloat = 1.0) -> UIKit.UIColor
+  convenience public init(hex: Swift.String, alpha: CoreFoundation.CGFloat = 1.0)
+  public static func randomColor() -> UIKit.UIColor
+}
+extension Swift.Dictionary {
+  public func toString() -> Swift.String?
+  public func toUrlSting(_ baseUrl: Swift.String? = nil) -> Swift.String
+}
+extension UIKit.UIWindow {
+  @_Concurrency.MainActor @preconcurrency public static var top: UIKit.UIWindow? {
+    get
+  }
+}
+public enum KCornerMask {
+  case topLeft
+  case topRight
+  case bottomLeft
+  case bottomRight
+  public static func == (a: UIKKit.KCornerMask, b: UIKKit.KCornerMask) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct CurrencySymbol {
+}
+public protocol CountdownDelegate : AnyObject {
+  func countdownDidUpdate(hourSting: Swift.String, minuteSting: Swift.String, secondSting: Swift.String)
+  func countdownDidUpdate(hourInt: Swift.Int, minuteInt: Swift.Int, secondInt: Swift.Int)
+  func countdownDidFinish()
+}
+@objc public class CountdownHelper : ObjectiveC.NSObject {
+  weak public var delegate: (any UIKKit.CountdownDelegate)?
+  public init(delegate: (any UIKKit.CountdownDelegate)?)
+  public func startCountdown(timeInt: Swift.Int)
+  public func stop()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class LocationHelper : ObjectiveC.NSObject, CoreLocation.CLLocationManagerDelegate {
+  public static var shared: UIKKit.LocationHelper
+  public var latitude: Swift.Double
+  public var longitude: Swift.Double
+  public func initKey(latitudeKey: Swift.String, longitudeKey: Swift.String, administrativeAreaKey: Swift.String, isoCountryCodeKey: Swift.String, countryKey: Swift.String, thoroughfareKey: Swift.String, localityKey: Swift.String, subLocalityKey: Swift.String)
+  public func requestLocationState()
+  public func getLocationInfo(locationResult: @escaping (_ locationBool: Swift.Bool, _ locationInfo: [Swift.String : Any]) -> Swift.Void)
+  @objc public func locationManager(_ manager: CoreLocation.CLLocationManager, didUpdateLocations locations: [CoreLocation.CLLocation])
+  @objc public func locationManagerDidChangeAuthorization(_ manager: CoreLocation.CLLocationManager)
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension UIKKit.KCornerMask : Swift.Equatable {}
+extension UIKKit.KCornerMask : Swift.Hashable {}
