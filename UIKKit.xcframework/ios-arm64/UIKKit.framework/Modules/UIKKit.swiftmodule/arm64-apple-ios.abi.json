@@ -173,7 +173,7 @@
           {
             "kind": "Function",
             "name": "getImage",
-            "printedName": "getImage(inViewController:result:)",
+            "printedName": "getImage(from:albumText:cameraText:cancelText:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -185,6 +185,27 @@
                 "name": "UIViewController",
                 "printedName": "UIKit.UIViewController",
                 "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
               },
               {
                 "kind": "TypeFunc",
@@ -206,8 +227,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:6UIKKit0A6HelperC8getImage16inViewController6resultySo06UIViewG0C_ySo7UIImageCctF",
-            "mangledName": "$s6UIKKit0A6HelperC8getImage16inViewController6resultySo06UIViewG0C_ySo7UIImageCctF",
+            "usr": "s:6UIKKit0A6HelperC8getImage4from9albumText06cameraG006cancelG010completionySo16UIViewControllerC_S3SySo7UIImageCctF",
+            "mangledName": "$s6UIKKit0A6HelperC8getImage4from9albumText06cameraG006cancelG010completionySo16UIViewControllerC_S3SySo7UIImageCctF",
             "moduleName": "UIKKit",
             "declAttributes": [
               "AccessControl",
@@ -234,7 +255,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(Swift.String?, Swift.String?) -> ()",
+                "printedName": "(Swift.String?, Swift.String?, Swift.String?, Swift.String?) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -244,8 +265,36 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Tuple",
-                    "printedName": "(Swift.String?, Swift.String?)",
+                    "printedName": "(Swift.String?, Swift.String?, Swift.String?, Swift.String?)",
                     "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
                       {
                         "kind": "TypeNominal",
                         "name": "Optional",
@@ -280,8 +329,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:6UIKKit0A6HelperC10getContact16inViewController6resultySo06UIViewG0C_ySSSg_AItctF",
-            "mangledName": "$s6UIKKit0A6HelperC10getContact16inViewController6resultySo06UIViewG0C_ySSSg_AItctF",
+            "usr": "s:6UIKKit0A6HelperC10getContact16inViewController6resultySo06UIViewG0C_ySSSg_A3ItctF",
+            "mangledName": "$s6UIKKit0A6HelperC10getContact16inViewController6resultySo06UIViewG0C_ySSSg_A3ItctF",
             "moduleName": "UIKKit",
             "declAttributes": [
               "AccessControl",
@@ -291,19 +340,13 @@
           },
           {
             "kind": "Function",
-            "name": "setSettingAlert",
-            "printedName": "setSettingAlert(inViewController:title:message:buttonText:)",
+            "name": "openSettingAlert",
+            "printedName": "openSettingAlert(title:message:buttonText:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIViewController",
-                "printedName": "UIKit.UIViewController",
-                "usr": "c:objc(cs)UIViewController"
               },
               {
                 "kind": "TypeNominal",
@@ -327,8 +370,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:6UIKKit0A6HelperC15setSettingAlert16inViewController5title7message10buttonTextySo06UIViewH0C_S3StF",
-            "mangledName": "$s6UIKKit0A6HelperC15setSettingAlert16inViewController5title7message10buttonTextySo06UIViewH0C_S3StF",
+            "usr": "s:6UIKKit0A6HelperC16openSettingAlert5title7message10buttonTextySS_S2StF",
+            "mangledName": "$s6UIKKit0A6HelperC16openSettingAlert5title7message10buttonTextySS_S2StF",
             "moduleName": "UIKKit",
             "declAttributes": [
               "AccessControl",
@@ -338,8 +381,8 @@
           },
           {
             "kind": "Function",
-            "name": "setShareAppActivities",
-            "printedName": "setShareAppActivities(vc:sourceView:file:)",
+            "name": "openShareAppActivities",
+            "printedName": "openShareAppActivities(vc:sourceView:file:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -365,8 +408,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:6UIKKit0A6HelperC21setShareAppActivities2vc10sourceView4fileySo16UIViewControllerC_So0K0CyptF",
-            "mangledName": "$s6UIKKit0A6HelperC21setShareAppActivities2vc10sourceView4fileySo16UIViewControllerC_So0K0CyptF",
+            "usr": "s:6UIKKit0A6HelperC22openShareAppActivities2vc10sourceView4fileySo16UIViewControllerC_So0K0CyptF",
+            "mangledName": "$s6UIKKit0A6HelperC22openShareAppActivities2vc10sourceView4fileySo16UIViewControllerC_So0K0CyptF",
             "moduleName": "UIKKit",
             "declAttributes": [
               "AccessControl",
@@ -444,7 +487,185 @@
             "mangledName": "$s6UIKKit0A6HelperC4call6numberySS_tF",
             "moduleName": "UIKKit",
             "declAttributes": [
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "checkCamera",
+            "printedName": "checkCamera(title:message:buttonText:authorizedBlock:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6UIKKit0A6HelperC11checkCamera5title7message10buttonText15authorizedBlockySS_S2SyyctF",
+            "mangledName": "$s6UIKKit0A6HelperC11checkCamera5title7message10buttonText15authorizedBlockySS_S2SyyctF",
+            "moduleName": "UIKKit",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "checkLocation",
+            "printedName": "checkLocation(title:message:buttonText:authorizedBlock:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6UIKKit0A6HelperC13checkLocation5title7message10buttonText15authorizedBlockySS_S2SyyctF",
+            "mangledName": "$s6UIKKit0A6HelperC13checkLocation5title7message10buttonText15authorizedBlockySS_S2SyyctF",
+            "moduleName": "UIKKit",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "checkContact",
+            "printedName": "checkContact(title:message:buttonText:authorizedBlock:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "hasDefaultArg": true,
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6UIKKit0A6HelperC12checkContact5title7message10buttonText15authorizedBlockySS_S2SyyctF",
+            "mangledName": "$s6UIKKit0A6HelperC12checkContact5title7message10buttonText15authorizedBlockySS_S2SyyctF",
+            "moduleName": "UIKKit",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
           }
@@ -815,7 +1036,57 @@
             "mangledName": "$s6UIKKit10KTextFieldC14deleteBackwardyyF",
             "moduleName": "UIKKit",
             "overriding": true,
+            "isOpen": true,
             "objc_name": "deleteBackward",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "canPerformAction",
+            "printedName": "canPerformAction(_:withSender:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Selector",
+                "printedName": "ObjectiveC.Selector",
+                "usr": "s:10ObjectiveC8SelectorV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Any?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@UIKKit@objc(cs)KTextField(im)canPerformAction:withSender:",
+            "mangledName": "$s6UIKKit10KTextFieldC16canPerformAction_10withSenderSb10ObjectiveC8SelectorV_ypSgtF",
+            "moduleName": "UIKKit",
+            "overriding": true,
+            "isOpen": true,
+            "objc_name": "canPerformAction:withSender:",
             "declAttributes": [
               "Dynamic",
               "ObjC",
@@ -908,6 +1179,7 @@
         "usr": "c:@M@UIKKit@objc(cs)KTextField",
         "mangledName": "$s6UIKKit10KTextFieldC",
         "moduleName": "UIKKit",
+        "isOpen": true,
         "declAttributes": [
           "Preconcurrency",
           "Custom",
@@ -1167,6 +1439,7 @@
             "mangledName": "$s6UIKKit17KUIViewControllerC11viewDidLoadyyF",
             "moduleName": "UIKKit",
             "overriding": true,
+            "isOpen": true,
             "objc_name": "viewDidLoad",
             "declAttributes": [
               "Dynamic",
@@ -1200,6 +1473,7 @@
             "usr": "c:@M@UIKKit@objc(cs)KUIViewController(im)gestureRecognizerShouldBegin:",
             "mangledName": "$s6UIKKit17KUIViewControllerC28gestureRecognizerShouldBeginySbSo09UIGestureE0CF",
             "moduleName": "UIKKit",
+            "isOpen": true,
             "objc_name": "gestureRecognizerShouldBegin:",
             "declAttributes": [
               "ObjC",
@@ -1224,123 +1498,7 @@
             "usr": "s:6UIKKit17KUIViewControllerC4backyyF",
             "mangledName": "$s6UIKKit17KUIViewControllerC4backyyF",
             "moduleName": "UIKKit",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "backAction",
-            "printedName": "backAction()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:6UIKKit17KUIViewControllerC10backActionyyF",
-            "mangledName": "$s6UIKKit17KUIViewControllerC10backActionyyF",
-            "moduleName": "UIKKit",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "fullPresent",
-            "printedName": "fullPresent(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIViewController",
-                "printedName": "UIKit.UIViewController",
-                "usr": "c:objc(cs)UIViewController"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:6UIKKit17KUIViewControllerC11fullPresentyySo06UIViewC0CF",
-            "mangledName": "$s6UIKKit17KUIViewControllerC11fullPresentyySo06UIViewC0CF",
-            "moduleName": "UIKKit",
-            "declAttributes": [
-              "Preconcurrency",
-              "Custom",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "dealWebMessage",
-            "printedName": "dealWebMessage(web:wkMessage:dict:webScripList:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "WKWebView",
-                "printedName": "WebKit.WKWebView",
-                "usr": "c:objc(cs)WKWebView"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "WKScriptMessage",
-                "printedName": "WebKit.WKScriptMessage",
-                "usr": "c:objc(cs)WKScriptMessage"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Dictionary",
-                "printedName": "[Swift.String : Any]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
-                  }
-                ],
-                "usr": "s:SD"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[Swift.String]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:6UIKKit17KUIViewControllerC14dealWebMessage3web02wkF04dict0G9ScripListySo9WKWebViewC_So08WKScriptF0CSDySSypGSaySSGtF",
-            "mangledName": "$s6UIKKit17KUIViewControllerC14dealWebMessage3web02wkF04dict0G9ScripListySo9WKWebViewC_So08WKScriptF0CSDySSypGSaySSGtF",
-            "moduleName": "UIKKit",
+            "isOpen": true,
             "declAttributes": [
               "Preconcurrency",
               "Custom",
@@ -1392,6 +1550,7 @@
             "mangledName": "$s6UIKKit17KUIViewControllerC12touchesBegan_4withyShySo7UITouchCG_So7UIEventCSgtF",
             "moduleName": "UIKKit",
             "overriding": true,
+            "isOpen": true,
             "objc_name": "touchesBegan:withEvent:",
             "declAttributes": [
               "Dynamic",
@@ -1506,6 +1665,7 @@
         "usr": "c:@M@UIKKit@objc(cs)KUIViewController",
         "mangledName": "$s6UIKKit17KUIViewControllerC",
         "moduleName": "UIKKit",
+        "isOpen": true,
         "declAttributes": [
           "Preconcurrency",
           "Custom",
@@ -2770,6 +2930,7 @@
             "mangledName": "$s6UIKKit14KTableViewCellC12awakeFromNibyyF",
             "moduleName": "UIKKit",
             "overriding": true,
+            "isOpen": true,
             "objc_name": "awakeFromNib",
             "declAttributes": [
               "Dynamic",
@@ -2808,6 +2969,7 @@
             "usr": "s:6UIKKit14KTableViewCellC13setEmailFiled04textG005tableC0ySo11UITextFieldC_So07UITableC0CtF",
             "mangledName": "$s6UIKKit14KTableViewCellC13setEmailFiled04textG005tableC0ySo11UITextFieldC_So07UITableC0CtF",
             "moduleName": "UIKKit",
+            "isOpen": true,
             "declAttributes": [
               "Preconcurrency",
               "Custom",
@@ -2837,6 +2999,7 @@
             "usr": "c:@M@UIKKit@objc(cs)KTableViewCell(im)textFieldShouldReturn:",
             "mangledName": "$s6UIKKit14KTableViewCellC21textFieldShouldReturnySbSo06UITextF0CF",
             "moduleName": "UIKKit",
+            "isOpen": true,
             "objc_name": "textFieldShouldReturn:",
             "declAttributes": [
               "ObjC",
@@ -2867,6 +3030,7 @@
             "usr": "c:@M@UIKKit@objc(cs)KTableViewCell(im)textFieldDidEndEditing:",
             "mangledName": "$s6UIKKit14KTableViewCellC22textFieldDidEndEditingyySo06UITextF0CF",
             "moduleName": "UIKKit",
+            "isOpen": true,
             "objc_name": "textFieldDidEndEditing:",
             "declAttributes": [
               "ObjC",
@@ -2897,6 +3061,7 @@
             "usr": "c:@M@UIKKit@objc(cs)KTableViewCell(im)textFieldDidBeginEditing:",
             "mangledName": "$s6UIKKit14KTableViewCellC24textFieldDidBeginEditingyySo06UITextF0CF",
             "moduleName": "UIKKit",
+            "isOpen": true,
             "objc_name": "textFieldDidBeginEditing:",
             "declAttributes": [
               "ObjC",
@@ -2940,6 +3105,7 @@
             "usr": "c:@M@UIKKit@objc(cs)KTableViewCell(im)textField:shouldChangeCharactersInRange:replacementString:",
             "mangledName": "$s6UIKKit14KTableViewCellC9textField_24shouldChangeCharactersIn17replacementStringSbSo06UITextF0C_So8_NSRangeVSStF",
             "moduleName": "UIKKit",
+            "isOpen": true,
             "objc_name": "textField:shouldChangeCharactersInRange:replacementString:",
             "declAttributes": [
               "ObjC",
@@ -3046,6 +3212,7 @@
         "usr": "c:@M@UIKKit@objc(cs)KTableViewCell",
         "mangledName": "$s6UIKKit14KTableViewCellC",
         "moduleName": "UIKKit",
+        "isOpen": true,
         "declAttributes": [
           "Preconcurrency",
           "Custom",
@@ -3056,6 +3223,1732 @@
         "inheritsConvenienceInitializers": true,
         "superclassNames": [
           "UIKit.UITableViewCell",
+          "UIKit.UIView",
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "__DefaultCustomPlaygroundQuickLookable",
+            "printedName": "__DefaultCustomPlaygroundQuickLookable",
+            "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
+            "mangledName": "$ss38__DefaultCustomPlaygroundQuickLookableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "UIKKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "KDatePickerView",
+        "printedName": "KDatePickerView",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "dateStr",
+            "printedName": "dateStr",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6UIKKit15KDatePickerViewC7dateStrSSSgvp",
+            "mangledName": "$s6UIKKit15KDatePickerViewC7dateStrSSSgvp",
+            "moduleName": "UIKKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6UIKKit15KDatePickerViewC7dateStrSSSgvg",
+                "mangledName": "$s6UIKKit15KDatePickerViewC7dateStrSSSgvg",
+                "moduleName": "UIKKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6UIKKit15KDatePickerViewC7dateStrSSSgvs",
+                "mangledName": "$s6UIKKit15KDatePickerViewC7dateStrSSSgvs",
+                "moduleName": "UIKKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6UIKKit15KDatePickerViewC7dateStrSSSgvM",
+                "mangledName": "$s6UIKKit15KDatePickerViewC7dateStrSSSgvM",
+                "moduleName": "UIKKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "titleText",
+            "printedName": "titleText",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6UIKKit15KDatePickerViewC9titleTextSSSgvp",
+            "mangledName": "$s6UIKKit15KDatePickerViewC9titleTextSSSgvp",
+            "moduleName": "UIKKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6UIKKit15KDatePickerViewC9titleTextSSSgvg",
+                "mangledName": "$s6UIKKit15KDatePickerViewC9titleTextSSSgvg",
+                "moduleName": "UIKKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6UIKKit15KDatePickerViewC9titleTextSSSgvs",
+                "mangledName": "$s6UIKKit15KDatePickerViewC9titleTextSSSgvs",
+                "moduleName": "UIKKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6UIKKit15KDatePickerViewC9titleTextSSSgvM",
+                "mangledName": "$s6UIKKit15KDatePickerViewC9titleTextSSSgvM",
+                "moduleName": "UIKKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "titleColor",
+            "printedName": "titleColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "usr": "c:objc(cs)UIColor"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6UIKKit15KDatePickerViewC10titleColorSo7UIColorCvp",
+            "mangledName": "$s6UIKKit15KDatePickerViewC10titleColorSo7UIColorCvp",
+            "moduleName": "UIKKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6UIKKit15KDatePickerViewC10titleColorSo7UIColorCvg",
+                "mangledName": "$s6UIKKit15KDatePickerViewC10titleColorSo7UIColorCvg",
+                "moduleName": "UIKKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6UIKKit15KDatePickerViewC10titleColorSo7UIColorCvs",
+                "mangledName": "$s6UIKKit15KDatePickerViewC10titleColorSo7UIColorCvs",
+                "moduleName": "UIKKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6UIKKit15KDatePickerViewC10titleColorSo7UIColorCvM",
+                "mangledName": "$s6UIKKit15KDatePickerViewC10titleColorSo7UIColorCvM",
+                "moduleName": "UIKKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "titleFont",
+            "printedName": "titleFont",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIFont",
+                "printedName": "UIKit.UIFont",
+                "usr": "c:objc(cs)UIFont"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6UIKKit15KDatePickerViewC9titleFontSo6UIFontCvp",
+            "mangledName": "$s6UIKKit15KDatePickerViewC9titleFontSo6UIFontCvp",
+            "moduleName": "UIKKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIFont",
+                    "printedName": "UIKit.UIFont",
+                    "usr": "c:objc(cs)UIFont"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6UIKKit15KDatePickerViewC9titleFontSo6UIFontCvg",
+                "mangledName": "$s6UIKKit15KDatePickerViewC9titleFontSo6UIFontCvg",
+                "moduleName": "UIKKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIFont",
+                    "printedName": "UIKit.UIFont",
+                    "usr": "c:objc(cs)UIFont"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6UIKKit15KDatePickerViewC9titleFontSo6UIFontCvs",
+                "mangledName": "$s6UIKKit15KDatePickerViewC9titleFontSo6UIFontCvs",
+                "moduleName": "UIKKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6UIKKit15KDatePickerViewC9titleFontSo6UIFontCvM",
+                "mangledName": "$s6UIKKit15KDatePickerViewC9titleFontSo6UIFontCvM",
+                "moduleName": "UIKKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "grayBackgroundColor",
+            "printedName": "grayBackgroundColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "usr": "c:objc(cs)UIColor"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6UIKKit15KDatePickerViewC19grayBackgroundColorSo7UIColorCvp",
+            "mangledName": "$s6UIKKit15KDatePickerViewC19grayBackgroundColorSo7UIColorCvp",
+            "moduleName": "UIKKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6UIKKit15KDatePickerViewC19grayBackgroundColorSo7UIColorCvg",
+                "mangledName": "$s6UIKKit15KDatePickerViewC19grayBackgroundColorSo7UIColorCvg",
+                "moduleName": "UIKKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6UIKKit15KDatePickerViewC19grayBackgroundColorSo7UIColorCvs",
+                "mangledName": "$s6UIKKit15KDatePickerViewC19grayBackgroundColorSo7UIColorCvs",
+                "moduleName": "UIKKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6UIKKit15KDatePickerViewC19grayBackgroundColorSo7UIColorCvM",
+                "mangledName": "$s6UIKKit15KDatePickerViewC19grayBackgroundColorSo7UIColorCvM",
+                "moduleName": "UIKKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "birthdayH",
+            "printedName": "birthdayH",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6UIKKit15KDatePickerViewC9birthdayH14CoreFoundation7CGFloatVvp",
+            "mangledName": "$s6UIKKit15KDatePickerViewC9birthdayH12CoreGraphics7CGFloatVvp",
+            "moduleName": "UIKKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6UIKKit15KDatePickerViewC9birthdayH14CoreFoundation7CGFloatVvg",
+                "mangledName": "$s6UIKKit15KDatePickerViewC9birthdayH12CoreGraphics7CGFloatVvg",
+                "moduleName": "UIKKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6UIKKit15KDatePickerViewC9birthdayH14CoreFoundation7CGFloatVvs",
+                "mangledName": "$s6UIKKit15KDatePickerViewC9birthdayH12CoreGraphics7CGFloatVvs",
+                "moduleName": "UIKKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6UIKKit15KDatePickerViewC9birthdayH14CoreFoundation7CGFloatVvM",
+                "mangledName": "$s6UIKKit15KDatePickerViewC9birthdayH12CoreGraphics7CGFloatVvM",
+                "moduleName": "UIKKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "dateTintColor",
+            "printedName": "dateTintColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "usr": "c:objc(cs)UIColor"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6UIKKit15KDatePickerViewC13dateTintColorSo7UIColorCvp",
+            "mangledName": "$s6UIKKit15KDatePickerViewC13dateTintColorSo7UIColorCvp",
+            "moduleName": "UIKKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6UIKKit15KDatePickerViewC13dateTintColorSo7UIColorCvg",
+                "mangledName": "$s6UIKKit15KDatePickerViewC13dateTintColorSo7UIColorCvg",
+                "moduleName": "UIKKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6UIKKit15KDatePickerViewC13dateTintColorSo7UIColorCvs",
+                "mangledName": "$s6UIKKit15KDatePickerViewC13dateTintColorSo7UIColorCvs",
+                "moduleName": "UIKKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6UIKKit15KDatePickerViewC13dateTintColorSo7UIColorCvM",
+                "mangledName": "$s6UIKKit15KDatePickerViewC13dateTintColorSo7UIColorCvM",
+                "moduleName": "UIKKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "dateFormatter",
+            "printedName": "dateFormatter",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6UIKKit15KDatePickerViewC13dateFormatterSSvp",
+            "mangledName": "$s6UIKKit15KDatePickerViewC13dateFormatterSSvp",
+            "moduleName": "UIKKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6UIKKit15KDatePickerViewC13dateFormatterSSvg",
+                "mangledName": "$s6UIKKit15KDatePickerViewC13dateFormatterSSvg",
+                "moduleName": "UIKKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6UIKKit15KDatePickerViewC13dateFormatterSSvs",
+                "mangledName": "$s6UIKKit15KDatePickerViewC13dateFormatterSSvs",
+                "moduleName": "UIKKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6UIKKit15KDatePickerViewC13dateFormatterSSvM",
+                "mangledName": "$s6UIKKit15KDatePickerViewC13dateFormatterSSvM",
+                "moduleName": "UIKKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "maximumDate",
+            "printedName": "maximumDate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6UIKKit15KDatePickerViewC11maximumDateSSvp",
+            "mangledName": "$s6UIKKit15KDatePickerViewC11maximumDateSSvp",
+            "moduleName": "UIKKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6UIKKit15KDatePickerViewC11maximumDateSSvg",
+                "mangledName": "$s6UIKKit15KDatePickerViewC11maximumDateSSvg",
+                "moduleName": "UIKKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6UIKKit15KDatePickerViewC11maximumDateSSvs",
+                "mangledName": "$s6UIKKit15KDatePickerViewC11maximumDateSSvs",
+                "moduleName": "UIKKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6UIKKit15KDatePickerViewC11maximumDateSSvM",
+                "mangledName": "$s6UIKKit15KDatePickerViewC11maximumDateSSvM",
+                "moduleName": "UIKKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "minimumDate",
+            "printedName": "minimumDate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6UIKKit15KDatePickerViewC11minimumDateSSvp",
+            "mangledName": "$s6UIKKit15KDatePickerViewC11minimumDateSSvp",
+            "moduleName": "UIKKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6UIKKit15KDatePickerViewC11minimumDateSSvg",
+                "mangledName": "$s6UIKKit15KDatePickerViewC11minimumDateSSvg",
+                "moduleName": "UIKKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6UIKKit15KDatePickerViewC11minimumDateSSvs",
+                "mangledName": "$s6UIKKit15KDatePickerViewC11minimumDateSSvs",
+                "moduleName": "UIKKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6UIKKit15KDatePickerViewC11minimumDateSSvM",
+                "mangledName": "$s6UIKKit15KDatePickerViewC11minimumDateSSvM",
+                "moduleName": "UIKKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "confirmButtonBgColor",
+            "printedName": "confirmButtonBgColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "usr": "c:objc(cs)UIColor"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6UIKKit15KDatePickerViewC20confirmButtonBgColorSo7UIColorCvp",
+            "mangledName": "$s6UIKKit15KDatePickerViewC20confirmButtonBgColorSo7UIColorCvp",
+            "moduleName": "UIKKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6UIKKit15KDatePickerViewC20confirmButtonBgColorSo7UIColorCvg",
+                "mangledName": "$s6UIKKit15KDatePickerViewC20confirmButtonBgColorSo7UIColorCvg",
+                "moduleName": "UIKKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6UIKKit15KDatePickerViewC20confirmButtonBgColorSo7UIColorCvs",
+                "mangledName": "$s6UIKKit15KDatePickerViewC20confirmButtonBgColorSo7UIColorCvs",
+                "moduleName": "UIKKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6UIKKit15KDatePickerViewC20confirmButtonBgColorSo7UIColorCvM",
+                "mangledName": "$s6UIKKit15KDatePickerViewC20confirmButtonBgColorSo7UIColorCvM",
+                "moduleName": "UIKKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "confirmButtonHeight",
+            "printedName": "confirmButtonHeight",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6UIKKit15KDatePickerViewC19confirmButtonHeight14CoreFoundation7CGFloatVvp",
+            "mangledName": "$s6UIKKit15KDatePickerViewC19confirmButtonHeight12CoreGraphics7CGFloatVvp",
+            "moduleName": "UIKKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6UIKKit15KDatePickerViewC19confirmButtonHeight14CoreFoundation7CGFloatVvg",
+                "mangledName": "$s6UIKKit15KDatePickerViewC19confirmButtonHeight12CoreGraphics7CGFloatVvg",
+                "moduleName": "UIKKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6UIKKit15KDatePickerViewC19confirmButtonHeight14CoreFoundation7CGFloatVvs",
+                "mangledName": "$s6UIKKit15KDatePickerViewC19confirmButtonHeight12CoreGraphics7CGFloatVvs",
+                "moduleName": "UIKKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6UIKKit15KDatePickerViewC19confirmButtonHeight14CoreFoundation7CGFloatVvM",
+                "mangledName": "$s6UIKKit15KDatePickerViewC19confirmButtonHeight12CoreGraphics7CGFloatVvM",
+                "moduleName": "UIKKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "confirmButtonColors",
+            "printedName": "confirmButtonColors",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[UIKit.UIColor]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6UIKKit15KDatePickerViewC19confirmButtonColorsSaySo7UIColorCGvp",
+            "mangledName": "$s6UIKKit15KDatePickerViewC19confirmButtonColorsSaySo7UIColorCGvp",
+            "moduleName": "UIKKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[UIKit.UIColor]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6UIKKit15KDatePickerViewC19confirmButtonColorsSaySo7UIColorCGvg",
+                "mangledName": "$s6UIKKit15KDatePickerViewC19confirmButtonColorsSaySo7UIColorCGvg",
+                "moduleName": "UIKKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[UIKit.UIColor]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIColor",
+                        "printedName": "UIKit.UIColor",
+                        "usr": "c:objc(cs)UIColor"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6UIKKit15KDatePickerViewC19confirmButtonColorsSaySo7UIColorCGvs",
+                "mangledName": "$s6UIKKit15KDatePickerViewC19confirmButtonColorsSaySo7UIColorCGvs",
+                "moduleName": "UIKKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6UIKKit15KDatePickerViewC19confirmButtonColorsSaySo7UIColorCGvM",
+                "mangledName": "$s6UIKKit15KDatePickerViewC19confirmButtonColorsSaySo7UIColorCGvM",
+                "moduleName": "UIKKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "confirmButtonText",
+            "printedName": "confirmButtonText",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6UIKKit15KDatePickerViewC17confirmButtonTextSSvp",
+            "mangledName": "$s6UIKKit15KDatePickerViewC17confirmButtonTextSSvp",
+            "moduleName": "UIKKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6UIKKit15KDatePickerViewC17confirmButtonTextSSvg",
+                "mangledName": "$s6UIKKit15KDatePickerViewC17confirmButtonTextSSvg",
+                "moduleName": "UIKKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6UIKKit15KDatePickerViewC17confirmButtonTextSSvs",
+                "mangledName": "$s6UIKKit15KDatePickerViewC17confirmButtonTextSSvs",
+                "moduleName": "UIKKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6UIKKit15KDatePickerViewC17confirmButtonTextSSvM",
+                "mangledName": "$s6UIKKit15KDatePickerViewC17confirmButtonTextSSvM",
+                "moduleName": "UIKKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "confirmButtonTextColor",
+            "printedName": "confirmButtonTextColor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "usr": "c:objc(cs)UIColor"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6UIKKit15KDatePickerViewC22confirmButtonTextColorSo7UIColorCvp",
+            "mangledName": "$s6UIKKit15KDatePickerViewC22confirmButtonTextColorSo7UIColorCvp",
+            "moduleName": "UIKKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6UIKKit15KDatePickerViewC22confirmButtonTextColorSo7UIColorCvg",
+                "mangledName": "$s6UIKKit15KDatePickerViewC22confirmButtonTextColorSo7UIColorCvg",
+                "moduleName": "UIKKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6UIKKit15KDatePickerViewC22confirmButtonTextColorSo7UIColorCvs",
+                "mangledName": "$s6UIKKit15KDatePickerViewC22confirmButtonTextColorSo7UIColorCvs",
+                "moduleName": "UIKKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6UIKKit15KDatePickerViewC22confirmButtonTextColorSo7UIColorCvM",
+                "mangledName": "$s6UIKKit15KDatePickerViewC22confirmButtonTextColorSo7UIColorCvM",
+                "moduleName": "UIKKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "confirmButtonFont",
+            "printedName": "confirmButtonFont",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIFont",
+                "printedName": "UIKit.UIFont",
+                "usr": "c:objc(cs)UIFont"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6UIKKit15KDatePickerViewC17confirmButtonFontSo6UIFontCvp",
+            "mangledName": "$s6UIKKit15KDatePickerViewC17confirmButtonFontSo6UIFontCvp",
+            "moduleName": "UIKKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIFont",
+                    "printedName": "UIKit.UIFont",
+                    "usr": "c:objc(cs)UIFont"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6UIKKit15KDatePickerViewC17confirmButtonFontSo6UIFontCvg",
+                "mangledName": "$s6UIKKit15KDatePickerViewC17confirmButtonFontSo6UIFontCvg",
+                "moduleName": "UIKKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIFont",
+                    "printedName": "UIKit.UIFont",
+                    "usr": "c:objc(cs)UIFont"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6UIKKit15KDatePickerViewC17confirmButtonFontSo6UIFontCvs",
+                "mangledName": "$s6UIKKit15KDatePickerViewC17confirmButtonFontSo6UIFontCvs",
+                "moduleName": "UIKKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6UIKKit15KDatePickerViewC17confirmButtonFontSo6UIFontCvM",
+                "mangledName": "$s6UIKKit15KDatePickerViewC17confirmButtonFontSo6UIFontCvM",
+                "moduleName": "UIKKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(dateStr:title:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "KDatePickerView",
+                "printedName": "UIKKit.KDatePickerView",
+                "usr": "c:@M@UIKKit@objc(cs)KDatePickerView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:6UIKKit15KDatePickerViewC7dateStr5titleACSSSg_SStcfc",
+            "mangledName": "$s6UIKKit15KDatePickerViewC7dateStr5titleACSSSg_SStcfc",
+            "moduleName": "UIKKit",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "layoutSubviews",
+            "printedName": "layoutSubviews()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@UIKKit@objc(cs)KDatePickerView(im)layoutSubviews",
+            "mangledName": "$s6UIKKit15KDatePickerViewC14layoutSubviewsyyF",
+            "moduleName": "UIKKit",
+            "overriding": true,
+            "objc_name": "layoutSubviews",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Override",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "show",
+            "printedName": "show()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:6UIKKit15KDatePickerViewC4showyyF",
+            "mangledName": "$s6UIKKit15KDatePickerViewC4showyyF",
+            "moduleName": "UIKKit",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(frame:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "KDatePickerView",
+                "printedName": "UIKKit.KDatePickerView",
+                "usr": "c:@M@UIKKit@objc(cs)KDatePickerView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGRect",
+                "printedName": "CoreFoundation.CGRect",
+                "usr": "c:@S@CGRect"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@UIKKit@objc(cs)KDatePickerView(im)initWithFrame:",
+            "mangledName": "$s6UIKKit15KDatePickerViewC5frameACSo6CGRectV_tcfc",
+            "moduleName": "UIKKit",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithFrame:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@UIKKit@objc(cs)KDatePickerView",
+        "mangledName": "$s6UIKKit15KDatePickerViewC",
+        "moduleName": "UIKKit",
+        "declAttributes": [
+          "Preconcurrency",
+          "Custom",
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)UIView",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
           "UIKit.UIView",
           "UIKit.UIResponder",
           "ObjectiveC.NSObject"
@@ -3187,10 +5080,12 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:6UIKKit6KToastC4show_5delayySS_14CoreFoundation7CGFloatVtF",
-            "mangledName": "$s6UIKKit6KToastC4show_5delayySS_12CoreGraphics7CGFloatVtF",
+            "usr": "s:6UIKKit6KToastC4show_5delayySS_14CoreFoundation7CGFloatVtFZ",
+            "mangledName": "$s6UIKKit6KToastC4show_5delayySS_12CoreGraphics7CGFloatVtFZ",
             "moduleName": "UIKKit",
+            "static": true,
             "declAttributes": [
+              "Final",
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
@@ -3228,10 +5123,12 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:6UIKKit6KToastC7loading_9tintColor010backgroundE0ySd_So7UIColorCAHtF",
-            "mangledName": "$s6UIKKit6KToastC7loading_9tintColor010backgroundE0ySd_So7UIColorCAHtF",
+            "usr": "s:6UIKKit6KToastC7loading_9tintColor010backgroundE0ySd_So7UIColorCAHtFZ",
+            "mangledName": "$s6UIKKit6KToastC7loading_9tintColor010backgroundE0ySd_So7UIColorCAHtFZ",
             "moduleName": "UIKKit",
+            "static": true,
             "declAttributes": [
+              "Final",
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
@@ -3248,10 +5145,12 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:6UIKKit6KToastC11hideLoadingyyF",
-            "mangledName": "$s6UIKKit6KToastC11hideLoadingyyF",
+            "usr": "s:6UIKKit6KToastC11hideLoadingyyFZ",
+            "mangledName": "$s6UIKKit6KToastC11hideLoadingyyFZ",
             "moduleName": "UIKKit",
+            "static": true,
             "declAttributes": [
+              "Final",
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
@@ -3699,6 +5598,37 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "UIKKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "AVFoundation",
+        "printedName": "AVFoundation",
+        "declKind": "Import",
+        "moduleName": "UIKKit"
+      },
+      {
+        "kind": "Import",
+        "name": "CoreLocation",
+        "printedName": "CoreLocation",
+        "declKind": "Import",
+        "moduleName": "UIKKit"
+      },
+      {
+        "kind": "Import",
+        "name": "Contacts",
+        "printedName": "Contacts",
+        "declKind": "Import",
+        "moduleName": "UIKKit"
       },
       {
         "kind": "Import",
@@ -6717,10 +8647,12 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:So16UIViewControllerC6UIKKitE5topVCABSgvp",
-            "mangledName": "$sSo16UIViewControllerC6UIKKitE5topVCABSgvp",
+            "usr": "s:So16UIViewControllerC6UIKKitE5topVCABSgvpZ",
+            "mangledName": "$sSo16UIViewControllerC6UIKKitE5topVCABSgvpZ",
             "moduleName": "UIKKit",
+            "static": true,
             "declAttributes": [
+              "Final",
               "Preconcurrency",
               "Custom"
             ],
@@ -6747,8 +8679,105 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:So16UIViewControllerC6UIKKitE5topVCABSgvg",
-                "mangledName": "$sSo16UIViewControllerC6UIKKitE5topVCABSgvg",
+                "usr": "s:So16UIViewControllerC6UIKKitE5topVCABSgvgZ",
+                "mangledName": "$sSo16UIViewControllerC6UIKKitE5topVCABSgvgZ",
+                "moduleName": "UIKKit",
+                "static": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "backAction",
+            "printedName": "backAction()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So16UIViewControllerC6UIKKitE10backActionyyF",
+            "mangledName": "$sSo16UIViewControllerC6UIKKitE10backActionyyF",
+            "moduleName": "UIKKit",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "fullPresent",
+            "printedName": "fullPresent(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So16UIViewControllerC6UIKKitE11fullPresentyyABF",
+            "mangledName": "$sSo16UIViewControllerC6UIKKitE11fullPresentyyABF",
+            "moduleName": "UIKKit",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "className",
+            "printedName": "className",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:So16UIViewControllerC6UIKKitE9classNameSSvp",
+            "mangledName": "$sSo16UIViewControllerC6UIKKitE9classNameSSvp",
+            "moduleName": "UIKKit",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:So16UIViewControllerC6UIKKitE9classNameSSvg",
+                "mangledName": "$sSo16UIViewControllerC6UIKKitE9classNameSSvg",
                 "moduleName": "UIKKit",
                 "isFromExtension": true,
                 "accessorKind": "get"
@@ -8575,6 +10604,31 @@
             "moduleName": "UIKKit",
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getTimeInterval",
+            "printedName": "getTimeInterval(withFormatter:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:SS6UIKKitE15getTimeInterval13withFormatterSdSS_tF",
+            "mangledName": "$sSS6UIKKitE15getTimeInterval13withFormatterSdSS_tF",
+            "moduleName": "UIKKit",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Struct",
@@ -9330,6 +11384,207 @@
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "addAlphaLight",
+            "printedName": "addAlphaLight(time:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "hasDefaultArg": true,
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So7UILabelC6UIKKitE13addAlphaLight4timey14CoreFoundation7CGFloatV_tF",
+            "mangledName": "$sSo7UILabelC6UIKKitE13addAlphaLight4timey12CoreGraphics7CGFloatV_tF",
+            "moduleName": "UIKKit",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "removeAlphaLight",
+            "printedName": "removeAlphaLight()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So7UILabelC6UIKKitE16removeAlphaLightyyF",
+            "mangledName": "$sSo7UILabelC6UIKKitE16removeAlphaLightyyF",
+            "moduleName": "UIKKit",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setTextGradient",
+            "printedName": "setTextGradient(startPoint:endPoint:colors:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGPoint",
+                "printedName": "CoreFoundation.CGPoint",
+                "hasDefaultArg": true,
+                "usr": "c:@S@CGPoint"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGPoint",
+                "printedName": "CoreFoundation.CGPoint",
+                "hasDefaultArg": true,
+                "usr": "c:@S@CGPoint"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[UIKit.UIColor]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So7UILabelC6UIKKitE15setTextGradient10startPoint03endG06colorsySo7CGPointV_AISaySo7UIColorCGtF",
+            "mangledName": "$sSo7UILabelC6UIKKitE15setTextGradient10startPoint03endG06colorsySo7CGPointV_AISaySo7UIColorCGtF",
+            "moduleName": "UIKKit",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "addTextShadow",
+            "printedName": "addTextShadow(offset:blurRadius:color:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGSize",
+                "printedName": "CoreFoundation.CGSize",
+                "hasDefaultArg": true,
+                "usr": "c:@S@CGSize"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "hasDefaultArg": true,
+                "usr": "s:14CoreFoundation7CGFloatV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "hasDefaultArg": true,
+                "usr": "c:objc(cs)UIColor"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So7UILabelC6UIKKitE13addTextShadow6offset10blurRadius5colorySo6CGSizeV_14CoreFoundation7CGFloatVSo7UIColorCtF",
+            "mangledName": "$sSo7UILabelC6UIKKitE13addTextShadow6offset10blurRadius5colorySo6CGSizeV_12CoreGraphics7CGFloatVSo7UIColorCtF",
+            "moduleName": "UIKKit",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "addStroke",
+            "printedName": "addStroke(withText:strokeColor:textColor:strokeWidth:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "hasDefaultArg": true,
+                "usr": "c:objc(cs)UIColor"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIColor",
+                "printedName": "UIKit.UIColor",
+                "hasDefaultArg": true,
+                "usr": "c:objc(cs)UIColor"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So7UILabelC6UIKKitE9addStroke8withText11strokeColor04textH00G5WidthySSSg_So7UIColorCAK14CoreFoundation7CGFloatVtF",
+            "mangledName": "$sSo7UILabelC6UIKKitE9addStroke8withText11strokeColor04textH00G5WidthySSSg_So7UIColorCAK12CoreGraphics7CGFloatVtF",
+            "moduleName": "UIKKit",
+            "declAttributes": [
+              "Preconcurrency",
+              "Custom"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -9815,6 +12070,56 @@
             "declKind": "Func",
             "usr": "s:14CoreFoundation7CGFloatV6UIKKitE6kScaleACyF",
             "mangledName": "$s12CoreGraphics7CGFloatV6UIKKitE6kScaleACyF",
+            "moduleName": "UIKKit",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getBMI",
+            "printedName": "getBMI(withHeight:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14CoreFoundation7CGFloatV6UIKKitE6getBMI10withHeightS2d_tF",
+            "mangledName": "$s12CoreGraphics7CGFloatV6UIKKitE6getBMI10withHeightS2d_tF",
+            "moduleName": "UIKKit",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getBMI",
+            "printedName": "getBMI(withWeight:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:14CoreFoundation7CGFloatV6UIKKitE6getBMI10withWeightS2d_tF",
+            "mangledName": "$s12CoreGraphics7CGFloatV6UIKKitE6getBMI10withWeightS2d_tF",
             "moduleName": "UIKKit",
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
@@ -12724,21 +15029,105 @@
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Public\/UIKitManager.swift",
       "kind": "StringLiteral",
-      "offset": 1430,
+      "offset": 868,
+      "length": 12,
+      "value": "\"Open Album\""
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Public\/UIKitManager.swift",
+      "kind": "StringLiteral",
+      "offset": 901,
+      "length": 13,
+      "value": "\"Open Camera\""
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Public\/UIKitManager.swift",
+      "kind": "StringLiteral",
+      "offset": 936,
+      "length": 8,
+      "value": "\"Cancel\""
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Public\/UIKitManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1701,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Public\/UIKitManager.swift",
       "kind": "StringLiteral",
-      "offset": 1451,
+      "offset": 1722,
+      "length": 4,
+      "value": "\"OK\""
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Public\/UIKitManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2755,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Public\/UIKitManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2773,
+      "length": 41,
+      "value": "\"Please enable camera access in Settings\""
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Public\/UIKitManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2833,
+      "length": 4,
+      "value": "\"OK\""
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Public\/UIKitManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3104,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Public\/UIKitManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3122,
+      "length": 77,
+      "value": "\"Allow location access to help verify your details and protect your account.\""
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Public\/UIKitManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3218,
+      "length": 4,
+      "value": "\"OK\""
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Public\/UIKitManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3485,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Public\/UIKitManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3503,
+      "length": 76,
+      "value": "\"If you want to set contacts, you can allow the app to use this permission.\""
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Public\/UIKitManager.swift",
+      "kind": "StringLiteral",
+      "offset": 3598,
       "length": 4,
       "value": "\"OK\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Private\/KToastView.swift",
       "kind": "FloatLiteral",
-      "offset": 388,
+      "offset": 189,
       "length": 3,
       "value": "1.5"
     },
@@ -12757,6 +15146,48 @@
       "value": "\"\""
     },
     {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Private\/PhotoPickerHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 324,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Private\/PhotoPickerHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 355,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Private\/PhotoPickerHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 386,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Private\/PhotoPickerHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 698,
+      "length": 12,
+      "value": "\"Open Album\""
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Private\/PhotoPickerHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 732,
+      "length": 13,
+      "value": "\"Open Camera\""
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Private\/PhotoPickerHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 767,
+      "length": 8,
+      "value": "\"Cancel\""
+    },
+    {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/KDevice.swift",
       "kind": "BooleanLiteral",
       "offset": 9611,
@@ -12766,210 +15197,280 @@
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/KUIViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 269,
+      "offset": 261,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/KTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 226,
+      "offset": 224,
       "length": 2,
       "value": "72"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/KTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 272,
+      "offset": 270,
       "length": 2,
       "value": "48"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/KTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 322,
+      "offset": 320,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/KTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 529,
+      "offset": 527,
       "length": 19,
       "value": "\"PingFangSC-Medium\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/KTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 556,
+      "offset": 554,
       "length": 2,
       "value": "13"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/KTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 607,
+      "offset": 605,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/KTableViewCell.swift",
       "kind": "Array",
-      "offset": 654,
+      "offset": 652,
       "length": 59,
       "value": "[\"@gmail.com\", \"@icloud.com\", \"@yahoo.com\", \"@outlook.com\"]"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/KTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 749,
+      "offset": 747,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/KTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 807,
+      "offset": 805,
       "length": 9,
       "value": "\"#EEF0F4\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/KTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 924,
+      "offset": 922,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/KTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 1151,
+      "offset": 1149,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/KTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 1198,
+      "offset": 1196,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/KTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 1227,
+      "offset": 1225,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/KTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 1322,
+      "offset": 1320,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/KTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 1372,
+      "offset": 1370,
       "length": 9,
       "value": "\"#0B2C04\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/KTableViewCell.swift",
       "kind": "FloatLiteral",
-      "offset": 1392,
+      "offset": 1390,
       "length": 4,
       "value": "0.15"
     },
     {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/KDatePickerView.swift",
+      "kind": "StringLiteral",
+      "offset": 310,
+      "length": 19,
+      "value": "\"PingFangSC-Medium\""
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/KDatePickerView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 337,
+      "length": 2,
+      "value": "15"
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/KDatePickerView.swift",
+      "kind": "FloatLiteral",
+      "offset": 419,
+      "length": 3,
+      "value": "0.6"
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/KDatePickerView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 460,
+      "length": 3,
+      "value": "320"
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/KDatePickerView.swift",
+      "kind": "StringLiteral",
+      "offset": 554,
+      "length": 12,
+      "value": "\"dd-MM-yyyy\""
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/KDatePickerView.swift",
+      "kind": "StringLiteral",
+      "offset": 604,
+      "length": 12,
+      "value": "\"31-12-2040\""
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/KDatePickerView.swift",
+      "kind": "StringLiteral",
+      "offset": 654,
+      "length": 12,
+      "value": "\"01-01-1960\""
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/KDatePickerView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 771,
+      "length": 2,
+      "value": "50"
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/KDatePickerView.swift",
+      "kind": "Array",
+      "offset": 822,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/KDatePickerView.swift",
+      "kind": "StringLiteral",
+      "offset": 868,
+      "length": 9,
+      "value": "\"Confirm\""
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/KDatePickerView.swift",
+      "kind": "StringLiteral",
+      "offset": 990,
+      "length": 19,
+      "value": "\"PingFangSC-Medium\""
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/KDatePickerView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1017,
+      "length": 2,
+      "value": "20"
+    },
+    {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/KToast.swift",
       "kind": "IntegerLiteral",
-      "offset": 224,
+      "offset": 238,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/KToast.swift",
       "kind": "FloatLiteral",
-      "offset": 340,
+      "offset": 368,
       "length": 3,
-      "value": "0.2"
+      "value": "1.0"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/KToast.swift",
       "kind": "IntegerLiteral",
-      "offset": 508,
+      "offset": 565,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/KToast.swift",
       "kind": "IntegerLiteral",
-      "offset": 675,
+      "offset": 711,
       "length": 8,
       "value": "20250605"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/KToast.swift",
       "kind": "IntegerLiteral",
-      "offset": 889,
+      "offset": 925,
       "length": 8,
       "value": "20250605"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/KToast.swift",
       "kind": "BooleanLiteral",
-      "offset": 953,
+      "offset": 989,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/KToast.swift",
       "kind": "IntegerLiteral",
-      "offset": 1093,
-      "length": 3,
-      "value": "100"
-    },
-    {
-      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/KToast.swift",
-      "kind": "IntegerLiteral",
       "offset": 1098,
+      "length": 2,
+      "value": "80"
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/KToast.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1183,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/KToast.swift",
       "kind": "IntegerLiteral",
-      "offset": 1121,
-      "length": 3,
-      "value": "100"
-    },
-    {
-      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/KToast.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1126,
+      "offset": 1217,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/KToast.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1136,
+      "kind": "FloatLiteral",
+      "offset": 1327,
       "length": 3,
-      "value": "100"
+      "value": "0.6"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/KToast.swift",
       "kind": "IntegerLiteral",
-      "offset": 1149,
-      "length": 3,
-      "value": "100"
-    },
-    {
-      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/KToast.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1198,
+      "offset": 1375,
       "length": 2,
       "value": "12"
     },
@@ -13207,308 +15708,448 @@
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
       "kind": "BooleanLiteral",
-      "offset": 13925,
+      "offset": 14219,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
       "kind": "IntegerLiteral",
-      "offset": 13944,
+      "offset": 14238,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
-      "kind": "StringLiteral",
-      "offset": 15545,
-      "length": 3,
-      "value": "\"@\""
-    },
-    {
-      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
-      "kind": "StringLiteral",
-      "offset": 16049,
-      "length": 3,
-      "value": "\"@\""
-    },
-    {
-      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
       "kind": "FloatLiteral",
-      "offset": 18318,
+      "offset": 15810,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
       "kind": "FloatLiteral",
-      "offset": 18364,
+      "offset": 16445,
+      "length": 3,
+      "value": "0.5"
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
+      "kind": "IntegerLiteral",
+      "offset": 16453,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
+      "kind": "FloatLiteral",
+      "offset": 16488,
+      "length": 3,
+      "value": "0.5"
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
+      "kind": "IntegerLiteral",
+      "offset": 16496,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
+      "kind": "IntegerLiteral",
+      "offset": 17452,
+      "length": 2,
+      "value": "-3"
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
+      "kind": "IntegerLiteral",
+      "offset": 17464,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
+      "kind": "IntegerLiteral",
+      "offset": 17490,
+      "length": 1,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
+      "kind": "StringLiteral",
+      "offset": 19357,
+      "length": 3,
+      "value": "\"@\""
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
+      "kind": "StringLiteral",
+      "offset": 19861,
+      "length": 3,
+      "value": "\"@\""
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
+      "kind": "FloatLiteral",
+      "offset": 22493,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
+      "kind": "FloatLiteral",
+      "offset": 22539,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
       "kind": "FloatLiteral",
-      "offset": 18380,
+      "offset": 22555,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
       "kind": "FloatLiteral",
-      "offset": 18395,
+      "offset": 22570,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
       "kind": "FloatLiteral",
-      "offset": 18474,
+      "offset": 22649,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 20961,
+      "offset": 25136,
       "length": 10,
       "value": "\"$\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 20999,
+      "offset": 25174,
       "length": 10,
       "value": "\"€\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 21041,
+      "offset": 25216,
       "length": 10,
       "value": "\"£\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 21079,
+      "offset": 25254,
       "length": 10,
       "value": "\"¥\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 21119,
+      "offset": 25294,
       "length": 10,
       "value": "\"₹\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 21160,
+      "offset": 25335,
       "length": 10,
       "value": "\"₽\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 21199,
+      "offset": 25374,
       "length": 10,
       "value": "\"₩\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 21240,
+      "offset": 25415,
       "length": 5,
       "value": "\"CHF\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 21277,
+      "offset": 25452,
       "length": 4,
       "value": "\"R$\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 21304,
+      "offset": 25479,
       "length": 3,
       "value": "\"R\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 21341,
+      "offset": 25516,
       "length": 5,
       "value": "\"NT$\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 21369,
+      "offset": 25544,
       "length": 10,
       "value": "\"฿\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 21410,
+      "offset": 25585,
       "length": 10,
       "value": "\"₦\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 21450,
+      "offset": 25625,
       "length": 10,
       "value": "\"₺\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 21492,
+      "offset": 25667,
       "length": 5,
       "value": "\"Kč\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 21529,
+      "offset": 25704,
       "length": 4,
       "value": "\"Ft\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 21563,
+      "offset": 25738,
       "length": 5,
       "value": "\"zł\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 21599,
+      "offset": 25774,
       "length": 4,
       "value": "\"kr\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 21639,
+      "offset": 25814,
       "length": 4,
       "value": "\"kr\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 21668,
+      "offset": 25843,
       "length": 26,
       "value": "\"د.إ\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 21727,
+      "offset": 25902,
       "length": 10,
       "value": "\"﷼\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 21769,
+      "offset": 25944,
       "length": 10,
       "value": "\"₪\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 21815,
+      "offset": 25990,
       "length": 26,
       "value": "\"ج.م\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 21883,
+      "offset": 26058,
       "length": 10,
       "value": "\"₨\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 21923,
+      "offset": 26098,
       "length": 10,
       "value": "\"৳\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 21965,
+      "offset": 26140,
       "length": 4,
       "value": "\"Rp\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 22006,
+      "offset": 26181,
       "length": 10,
       "value": "\"₱\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 22058,
+      "offset": 26233,
       "length": 5,
       "value": "\"₪\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 22101,
+      "offset": 26276,
       "length": 4,
       "value": "\"kn\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 22146,
+      "offset": 26321,
       "length": 4,
       "value": "\"RM\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 22183,
+      "offset": 26358,
       "length": 5,
       "value": "\"฿\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 22225,
+      "offset": 26400,
       "length": 5,
       "value": "\"₺\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
       "kind": "Dictionary",
-      "offset": 22310,
+      "offset": 26485,
       "length": 1262,
       "value": "[(\"United States\", (\"USD\", \"$\")), (\"Eurozone\", (\"EUR\", \"€\")), (\"United Kingdom\", (\"GBP\", \"£\")), (\"Japan\", (\"JPY\", \"¥\")), (\"China\", (\"CNY\", \"¥\")), (\"India\", (\"INR\", \"₹\")), (\"Russia\", (\"RUB\", \"₽\")), (\"South Korea\", (\"KRW\", \"₩\")), (\"Switzerland\", (\"CHF\", \"CHF\")), (\"Brazil\", (\"BRL\", \"R$\")), (\"South Africa\", (\"ZAR\", \"R\")), (\"Taiwan\", (\"TWD\", \"NT$\")), (\"Thailand\", (\"THB\", \"฿\")), (\"Mexico\", (\"MXN\", \"$\")), (\"Nigeria\", (\"NGN\", \"₦\")), (\"Turkey\", (\"TRY\", \"₺\")), (\"Czech Republic\", (\"CZK\", \"Kč\")), (\"Hungary\", (\"HUF\", \"Ft\")), (\"Poland\", (\"PLN\", \"zł\")), (\"Sweden\", (\"SEK\", \"kr\")), (\"Norway\", (\"NOK\", \"kr\")), (\"United Arab Emirates\", (\"AED\", \"د.إ\")), (\"Saudi Arabia\", (\"SAR\", \"﷼\")), (\"Iran\", (\"IRR\", \"﷼\")), (\"Israel\", (\"ILS\", \"₪\")), (\"Egypt\", (\"EGP\", \"ج.م\")), (\"Pakistan\", (\"PKR\", \"₨\")), (\"Bangladesh\", (\"BDT\", \"৳\")), (\"Indonesia\", (\"IDR\", \"Rp\")), (\"Philippines\", (\"PHP\", \"₱\")), (\"Denmark\", (\"DKK\", \"kr\")), (\"Argentina\", (\"ARS\", \"$\")), (\"Croatia\", (\"HRK\", \"kn\")), (\"Singapore\", (\"SGD\", \"$\")), (\"Malaysia\", (\"MYR\", \"RM\"))]"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Private\/AlertHelper.swift",
       "kind": "StringLiteral",
-      "offset": 249,
+      "offset": 229,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Private\/AlertHelper.swift",
       "kind": "StringLiteral",
-      "offset": 270,
+      "offset": 250,
+      "length": 4,
+      "value": "\"OK\""
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Helper\/PrivacyHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 293,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Helper\/PrivacyHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 326,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Helper\/PrivacyHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 362,
+      "length": 4,
+      "value": "\"OK\""
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Helper\/PrivacyHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 530,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Helper\/PrivacyHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 550,
+      "length": 41,
+      "value": "\"Please enable camera access in Settings\""
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Helper\/PrivacyHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 612,
+      "length": 4,
+      "value": "\"OK\""
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Helper\/PrivacyHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 1541,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Helper\/PrivacyHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 1561,
+      "length": 77,
+      "value": "\"Allow location access to help verify your details and protect your account.\""
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Helper\/PrivacyHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 1659,
+      "length": 4,
+      "value": "\"OK\""
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Helper\/PrivacyHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 2842,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Helper\/PrivacyHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 2862,
+      "length": 76,
+      "value": "\"If you want to set contacts, you can allow the app to use this permission.\""
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Helper\/PrivacyHelper.swift",
+      "kind": "StringLiteral",
+      "offset": 2959,
       "length": 4,
       "value": "\"OK\""
     },

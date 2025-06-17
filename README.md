@@ -12,12 +12,16 @@
   - getImage: Pull up the album camera to get the picture
   - getContact: Get the contact name and phone number selected by the user
   
-  - setSettingAlert: Open the system settings page
-  - setShareAppActivities: Share file resources to external
+  - openSettingAlert: Open the system settings page
+  - openShareAppActivities: Share file resources to external
   
   - openUrl: open url in safari
   - openReview: Store review popup
   - call: Make a call
+  
+  - checkCamera: Request camera permission, callback if successful, jump to pop-up window if failed
+  - checkLocation
+  - checkContact
 
 
 ##** LocationHelper
@@ -103,3 +107,30 @@ Alternatively, you can directly call backAction() under the back() method to imp
     - requestIDFA
     - getIDFA
     - getIDFV
+
+
+ ##** KDatePickerView
+ 
+  - init(dateString:String?=nil,titleTxt:String?=nil)
+    - show
+    
+    - dateStr
+    - titleText
+    - titleColor
+    - titleFont
+    - grayBackgroundColor
+    - birthdayH
+    - dateTintColor
+    - dateFormatter
+    - maximumDate
+    - minimumDate
+    - confirmButtonBgColor
+    - confirmButtonHeight
+    - confirmButtonColors
+    - confirmButtonText
+    - confirmButtonTextColor
+    - confirmButtonFont
+
+
+
+

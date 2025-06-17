@@ -6,6 +6,7 @@ import AVFoundation
 import AdSupport
 import AppTrackingTransparency
 import SystemConfiguration.CaptiveNetwork
+import Contacts
 import ContactsUI
 import CoreLocation
 import CoreTelephony
@@ -23,13 +24,16 @@ import _SwiftConcurrencyShims
   public func setCustom(with imageView: UIKit.UIImageView, didClick: @escaping () -> Swift.Void)
   public func customShow()
   public func customHide()
-  public func getImage(inViewController vc: UIKit.UIViewController, result: @escaping (_ image: UIKit.UIImage) -> Swift.Void)
-  public func getContact(inViewController vc: UIKit.UIViewController, result: @escaping (_ fullName: Swift.String?, _ phoneNumber: Swift.String?) -> Swift.Void)
-  public func setSettingAlert(inViewController vc: UIKit.UIViewController, title: Swift.String, message: Swift.String = "", buttonText: Swift.String = "OK")
-  public func setShareAppActivities(vc: UIKit.UIViewController, sourceView: UIKit.UIView, file: Any)
+  public func getImage(from viewController: UIKit.UIViewController, albumText: Swift.String = "Open Album", cameraText: Swift.String = "Open Camera", cancelText: Swift.String = "Cancel", completion: @escaping (UIKit.UIImage) -> Swift.Void)
+  public func getContact(inViewController vc: UIKit.UIViewController, result: @escaping (_ fullName: Swift.String?, _ phoneNumber: Swift.String?, _ emailAddresses: Swift.String?, _ postalAddresses: Swift.String?) -> Swift.Void)
+  public func openSettingAlert(title: Swift.String, message: Swift.String = "", buttonText: Swift.String = "OK")
+  public func openShareAppActivities(vc: UIKit.UIViewController, sourceView: UIKit.UIView, file: Any)
   public func openUrl(urlString: Swift.String)
   public func openReview()
   public func call(number: Swift.String)
+  public func checkCamera(title: Swift.String = "", message: Swift.String = "Please enable camera access in Settings", buttonText: Swift.String = "OK", authorizedBlock: @escaping () -> Swift.Void)
+  public func checkLocation(title: Swift.String = "", message: Swift.String = "Allow location access to help verify your details and protect your account.", buttonText: Swift.String = "OK", authorizedBlock: @escaping () -> Swift.Void)
+  public func checkContact(title: Swift.String = "", message: Swift.String = "If you want to set contacts, you can allow the app to use this permission.", buttonText: Swift.String = "OK", authorizedBlock: @escaping () -> Swift.Void)
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers public class DeviceIdHelper : ObjectiveC.NSObject {
@@ -40,8 +44,9 @@ import _SwiftConcurrencyShims
   @objc override dynamic public init()
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class KTextField : UIKit.UITextField {
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func deleteBackward()
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency open class KTextField : UIKit.UITextField {
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func deleteBackward()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func canPerformAction(_ action: ObjectiveC.Selector, withSender sender: Any?) -> Swift.Bool
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
@@ -146,15 +151,12 @@ extension UIKit.UIDevice {
     get
   }
 }
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class KUIViewController : UIKit.UIViewController, UIKit.UIGestureRecognizerDelegate {
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency open class KUIViewController : UIKit.UIViewController, UIKit.UIGestureRecognizerDelegate {
   @_Concurrency.MainActor @preconcurrency public var navigationPopOpen: Swift.Bool
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidLoad()
-  @_Concurrency.MainActor @preconcurrency @objc public func gestureRecognizerShouldBegin(_ gestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
-  @_Concurrency.MainActor @preconcurrency public func back()
-  @_Concurrency.MainActor @preconcurrency public func backAction()
-  @_Concurrency.MainActor @preconcurrency public func fullPresent(_ targetFile: UIKit.UIViewController)
-  @_Concurrency.MainActor @preconcurrency public func dealWebMessage(web: WebKit.WKWebView, wkMessage: WebKit.WKScriptMessage, dict: [Swift.String : Any], webScripList: [Swift.String])
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func touchesBegan(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func viewDidLoad()
+  @_Concurrency.MainActor @preconcurrency @objc open func gestureRecognizerShouldBegin(_ gestureRecognizer: UIKit.UIGestureRecognizer) -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency open func back()
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func touchesBegan(_ touches: Swift.Set<UIKit.UITouch>, with event: UIKit.UIEvent?)
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
@@ -163,11 +165,16 @@ extension UIKit.UIViewController {
   @_Concurrency.MainActor @preconcurrency public func popGestureClose()
   @_Concurrency.MainActor @preconcurrency public func popGestureOpen()
   @_Concurrency.MainActor @preconcurrency public func removeSelf()
-  @_Concurrency.MainActor @preconcurrency public var topVC: UIKit.UIViewController? {
+  @_Concurrency.MainActor @preconcurrency public static var topVC: UIKit.UIViewController? {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public func backAction()
+  @_Concurrency.MainActor @preconcurrency public func fullPresent(_ targetFile: UIKit.UIViewController)
+  @_Concurrency.MainActor @preconcurrency public var className: Swift.String {
     get
   }
 }
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class KTableViewCell : UIKit.UITableViewCell, UIKit.UITextFieldDelegate {
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency open class KTableViewCell : UIKit.UITableViewCell, UIKit.UITextFieldDelegate {
   @_Concurrency.MainActor @preconcurrency public var cellEmailOffsetX: CoreFoundation.CGFloat
   @_Concurrency.MainActor @preconcurrency public var emailButtonHeight: CoreFoundation.CGFloat
   @_Concurrency.MainActor @preconcurrency public var emailButtonLeftMargin: CoreFoundation.CGFloat
@@ -180,12 +187,12 @@ extension UIKit.UIViewController {
   @_Concurrency.MainActor @preconcurrency public var emailHasLine: Swift.Bool
   @_Concurrency.MainActor @preconcurrency public var emailLineColor: UIKit.UIColor
   @_Concurrency.MainActor @preconcurrency public var didEndFill: (Swift.String) -> Swift.Void
-  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func awakeFromNib()
-  @_Concurrency.MainActor @preconcurrency public func setEmailFiled(textFiled: UIKit.UITextField, tableView: UIKit.UITableView)
-  @_Concurrency.MainActor @preconcurrency @objc public func textFieldShouldReturn(_ textField: UIKit.UITextField) -> Swift.Bool
-  @_Concurrency.MainActor @preconcurrency @objc public func textFieldDidEndEditing(_ textField: UIKit.UITextField)
-  @_Concurrency.MainActor @preconcurrency @objc public func textFieldDidBeginEditing(_ textField: UIKit.UITextField)
-  @_Concurrency.MainActor @preconcurrency @objc public func textField(_ textField: UIKit.UITextField, shouldChangeCharactersIn range: Foundation.NSRange, replacementString string: Swift.String) -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic open func awakeFromNib()
+  @_Concurrency.MainActor @preconcurrency open func setEmailFiled(textFiled: UIKit.UITextField, tableView: UIKit.UITableView)
+  @_Concurrency.MainActor @preconcurrency @objc open func textFieldShouldReturn(_ textField: UIKit.UITextField) -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency @objc open func textFieldDidEndEditing(_ textField: UIKit.UITextField)
+  @_Concurrency.MainActor @preconcurrency @objc open func textFieldDidBeginEditing(_ textField: UIKit.UITextField)
+  @_Concurrency.MainActor @preconcurrency @objc open func textField(_ textField: UIKit.UITextField, shouldChangeCharactersIn range: Foundation.NSRange, replacementString string: Swift.String) -> Swift.Bool
   @available(iOS 3.0, *)
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(style: UIKit.UITableViewCell.CellStyle, reuseIdentifier: Swift.String?)
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
@@ -197,10 +204,32 @@ extension UIKit.UITableViewCell {
   @_Concurrency.MainActor @preconcurrency public func scrollNext()
   @_Concurrency.MainActor @preconcurrency public func scrollTop()
 }
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class KDatePickerView : UIKit.UIView {
+  @_Concurrency.MainActor @preconcurrency public var dateStr: Swift.String?
+  @_Concurrency.MainActor @preconcurrency public var titleText: Swift.String?
+  @_Concurrency.MainActor @preconcurrency public var titleColor: UIKit.UIColor
+  @_Concurrency.MainActor @preconcurrency public var titleFont: UIKit.UIFont
+  @_Concurrency.MainActor @preconcurrency public var grayBackgroundColor: UIKit.UIColor
+  @_Concurrency.MainActor @preconcurrency public var birthdayH: CoreFoundation.CGFloat
+  @_Concurrency.MainActor @preconcurrency public var dateTintColor: UIKit.UIColor
+  @_Concurrency.MainActor @preconcurrency public var dateFormatter: Swift.String
+  @_Concurrency.MainActor @preconcurrency public var maximumDate: Swift.String
+  @_Concurrency.MainActor @preconcurrency public var minimumDate: Swift.String
+  @_Concurrency.MainActor @preconcurrency public var confirmButtonBgColor: UIKit.UIColor
+  @_Concurrency.MainActor @preconcurrency public var confirmButtonHeight: CoreFoundation.CGFloat
+  @_Concurrency.MainActor @preconcurrency public var confirmButtonColors: [UIKit.UIColor]
+  @_Concurrency.MainActor @preconcurrency public var confirmButtonText: Swift.String
+  @_Concurrency.MainActor @preconcurrency public var confirmButtonTextColor: UIKit.UIColor
+  @_Concurrency.MainActor @preconcurrency public var confirmButtonFont: UIKit.UIFont
+  @_Concurrency.MainActor @preconcurrency public init(dateStr: Swift.String?, title: Swift.String)
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public func layoutSubviews()
+  @_Concurrency.MainActor @preconcurrency public func show()
+  @objc deinit
+}
 @objc @_inheritsConvenienceInitializers public class KToast : ObjectiveC.NSObject {
-  public func show(_ msg: Swift.String, delay: CoreFoundation.CGFloat = 0.2)
-  public func loading(_ duration: Foundation.TimeInterval = 30, tintColor: UIKit.UIColor = .gray, backgroundColor: UIKit.UIColor = .clear)
-  public func hideLoading()
+  public static func show(_ msg: Swift.String, delay: CoreFoundation.CGFloat = 1.0)
+  public static func loading(_ duration: Foundation.TimeInterval = 30, tintColor: UIKit.UIColor = .white, backgroundColor: UIKit.UIColor = .clear)
+  public static func hideLoading()
   @objc override dynamic public init()
   @objc deinit
 }
@@ -251,11 +280,17 @@ extension Swift.String {
   public func readFileAsDict() -> [Swift.String : Any]?
   public func readFileAsArray() -> [Any]?
   public func readFileAsJSON() -> Swift.String?
+  public func getTimeInterval(withFormatter formatter: Swift.String) -> Foundation.TimeInterval
 }
 extension UIKit.UILabel {
   @_Concurrency.MainActor @preconcurrency public func setPrivacy(_ lineColor: UIKit.UIColor, _ hasLine: Swift.Bool = false, _ type: Swift.Int = 0)
   @_Concurrency.MainActor @preconcurrency public func setFirst(content: Swift.String, withFont font: UIKit.UIFont)
   @_Concurrency.MainActor @preconcurrency public func getLabelHeight(width: CoreFoundation.CGFloat) -> CoreFoundation.CGFloat
+  @_Concurrency.MainActor @preconcurrency public func addAlphaLight(time: CoreFoundation.CGFloat = 1.0)
+  @_Concurrency.MainActor @preconcurrency public func removeAlphaLight()
+  @_Concurrency.MainActor @preconcurrency public func setTextGradient(startPoint: CoreFoundation.CGPoint = CGPoint(x: 0.5, y: 0), endPoint: CoreFoundation.CGPoint = CGPoint(x: 0.5, y: 1), colors: [UIKit.UIColor])
+  @_Concurrency.MainActor @preconcurrency public func addTextShadow(offset: CoreFoundation.CGSize = CGSize(width: -3, height: 5), blurRadius: CoreFoundation.CGFloat = 6, color: UIKit.UIColor = .orange)
+  @_Concurrency.MainActor @preconcurrency public func addStroke(withText text: Swift.String? = nil, strokeColor: UIKit.UIColor = .black, textColor: UIKit.UIColor = .white, strokeWidth: CoreFoundation.CGFloat)
 }
 extension UIKit.UIButton {
   @_Concurrency.MainActor @preconcurrency public func setAfterTitle(after: Swift.String = "@", color: UIKit.UIColor)
@@ -273,6 +308,8 @@ extension CoreFoundation.CGFloat {
     get
   }
   public func kScale() -> CoreFoundation.CGFloat
+  public func getBMI(withHeight height: Swift.Double) -> Swift.Double
+  public func getBMI(withWeight weight: Swift.Double) -> Swift.Double
 }
 extension Swift.Int {
   public var stringValue: Swift.String {

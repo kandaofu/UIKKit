@@ -32,26 +32,26 @@ public class UIKKitHelper{
     }
     
     /// getImage form picker
-    public func getImage(inViewController vc:UIViewController,result:@escaping((_ image:UIImage)->Void)){
-        PhotoPickerHelper.present(from: vc) { image in
-            result(image)
+    public func getImage(from viewController: UIViewController, albumText:String = "Open Album",cameraText:String = "Open Camera", cancelText:String = "Cancel", completion: @escaping (UIImage) -> Void){
+        PhotoPickerHelper.present(from: viewController,albumText: albumText, cameraText:cameraText, cancelText:cancelText) { image in
+            completion(image)
         }
     }
     
     /// getContactinfo fullName phoneNumber
-    public func getContact(inViewController vc:UIViewController,result:@escaping((_ fullName:String?,_ phoneNumber:String?)->Void)){
-        ContactHelper.present(from: vc) { fullName, phoneNumber in
-            result(fullName,phoneNumber)
+    public func getContact(inViewController vc:UIViewController,result:@escaping((_ fullName: String?, _ phoneNumber: String?, _ emailAddresses: String?, _ postalAddresses: String?)->Void)){
+        ContactHelper.present(from: vc) { fullName, phoneNumber, emailAddresses, postalAddresses   in
+            result(fullName, phoneNumber, emailAddresses, postalAddresses)
         }
     }
     
     /// open  system setting page
-    public func setSettingAlert(inViewController vc:UIViewController,title:String,message:String="",buttonText:String="OK"){
-        AlertHelper.openSetting(vc: vc, title: title,message: message,buttonText: buttonText)
+    public func openSettingAlert(title:String,message:String="",buttonText:String="OK"){
+        AlertHelper.openSetting(title: title,message: message,buttonText: buttonText)
     }
     
     /// share source with applicationActivities
-    public func setShareAppActivities(vc:UIViewController,sourceView:UIView,file: Any) {
+    public func openShareAppActivities(vc:UIViewController,sourceView:UIView,file: Any) {
         AlertHelper.shareWithAppActivities(vc: vc, sourceView: sourceView, file: file)
     }
     
@@ -73,10 +73,28 @@ public class UIKKitHelper{
         }
     }
     
+    /// Make a call
     public func call(number:String){
         openUrl(urlString: "tel:\(number)")
     }
+    
+    /// check Camera authorizationStatus
+    public func checkCamera(title:String="",message:String="Please enable camera access in Settings",buttonText:String="OK",authorizedBlock:@escaping(()->Void)){
+        PrivacyHelper.shared.checkCamera(title: title, message: message, buttonText: buttonText, authorizedBlock: authorizedBlock)
+    }
+    
+    /// check Location authorizationStatus
+    public func checkLocation(title:String="",message:String="Allow location access to help verify your details and protect your account.",buttonText:String="OK",authorizedBlock:@escaping(()->Void)){
+        PrivacyHelper.shared.checkLocation(title: title, message: message, buttonText: buttonText, authorizedBlock: authorizedBlock)
+    }
 
+    /// check Contact authorizationStatus
+    public func checkContact(title:String="",message:String="If you want to set contacts, you can allow the app to use this permission.",buttonText:String="OK",authorizedBlock:@escaping(()->Void)){
+        PrivacyHelper.shared.checkContact(title: title, message: message, buttonText: buttonText, authorizedBlock: authorizedBlock)
+    }
+    
+    
+    
     
 }
 
