@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'UIKKit'
-  s.version          = '1.0.1'
+  s.version          = '1.0.2'
   s.summary          = 'xtending UIKit to make development easier.'
   s.description      = <<-DESC
     xtending UIKit to make development easier.
@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.platform         = :ios, '13.0'
 
   s.source = {
-    :http => 'https://github.com/kandaofu/UIKKit/releases/download/1.0.1/UIKKit.xcframework.zip'
+    :http => 'https://github.com/kandaofu/UIKKit/releases/download/1.0.2/UIKKit.xcframework.zip'
   }
 
   s.vendored_frameworks = 'UIKKit.xcframework'

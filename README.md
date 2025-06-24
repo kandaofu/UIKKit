@@ -5,13 +5,10 @@
 
 ##** UIKKitHelper
 
-  - setCustom: Set the global customer service floating button
-  - customShow: Show the customer service button
-  - customHide: Hide the customer service button
-  
-  - getImage: Pull up the album camera to get the picture
-  - getContact: Get the contact name and phone number selected by the user
-  
+  - setFloatingButton: Set the global floating button
+  - floatShow: Show the floating button
+  - floatHide: Hide the floating button
+
   - openSettingAlert: Open the system settings page
   - openShareAppActivities: Share file resources to external
   
@@ -19,22 +16,7 @@
   - openReview: Store review popup
   - call: Make a call
   
-  - checkCamera: Request camera permission, callback if successful, jump to pop-up window if failed
-  - checkLocation
-  - checkContact
-
-
-##** LocationHelper
- - LocationHelper.shared
- 
- - initKey (Optional)
- 
- - requestLocationState: request location permission
- 
- - getLocationInfo
-   *\get location information (needs to be initKey)
- 
-   
+  
 ##** CountdownHelper
 
 eg: 

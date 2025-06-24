@@ -172,174 +172,6 @@
           },
           {
             "kind": "Function",
-            "name": "getImage",
-            "printedName": "getImage(from:albumText:cameraText:cancelText:completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIViewController",
-                "printedName": "UIKit.UIViewController",
-                "usr": "c:objc(cs)UIViewController"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "hasDefaultArg": true,
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "hasDefaultArg": true,
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "hasDefaultArg": true,
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(UIKit.UIImage) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UIImage",
-                    "printedName": "UIKit.UIImage",
-                    "usr": "c:objc(cs)UIImage"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:6UIKKit0A6HelperC8getImage4from9albumText06cameraG006cancelG010completionySo16UIViewControllerC_S3SySo7UIImageCctF",
-            "mangledName": "$s6UIKKit0A6HelperC8getImage4from9albumText06cameraG006cancelG010completionySo16UIViewControllerC_S3SySo7UIImageCctF",
-            "moduleName": "UIKKit",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getContact",
-            "printedName": "getContact(inViewController:result:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UIViewController",
-                "printedName": "UIKit.UIViewController",
-                "usr": "c:objc(cs)UIViewController"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.String?, Swift.String?, Swift.String?, Swift.String?) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Tuple",
-                    "printedName": "(Swift.String?, Swift.String?, Swift.String?, Swift.String?)",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "Swift.String?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "Swift.String?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "Swift.String?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "Swift.String?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "String",
-                            "printedName": "Swift.String",
-                            "usr": "s:SS"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:6UIKKit0A6HelperC10getContact16inViewController6resultySo06UIViewG0C_ySSSg_A3ItctF",
-            "mangledName": "$s6UIKKit0A6HelperC10getContact16inViewController6resultySo06UIViewG0C_ySSSg_A3ItctF",
-            "moduleName": "UIKKit",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "openSettingAlert",
             "printedName": "openSettingAlert(title:message:buttonText:)",
             "children": [
@@ -491,183 +323,6 @@
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "checkCamera",
-            "printedName": "checkCamera(title:message:buttonText:authorizedBlock:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "hasDefaultArg": true,
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "hasDefaultArg": true,
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "hasDefaultArg": true,
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "() -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:6UIKKit0A6HelperC11checkCamera5title7message10buttonText15authorizedBlockySS_S2SyyctF",
-            "mangledName": "$s6UIKKit0A6HelperC11checkCamera5title7message10buttonText15authorizedBlockySS_S2SyyctF",
-            "moduleName": "UIKKit",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "checkLocation",
-            "printedName": "checkLocation(title:message:buttonText:authorizedBlock:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "hasDefaultArg": true,
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "hasDefaultArg": true,
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "hasDefaultArg": true,
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "() -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:6UIKKit0A6HelperC13checkLocation5title7message10buttonText15authorizedBlockySS_S2SyyctF",
-            "mangledName": "$s6UIKKit0A6HelperC13checkLocation5title7message10buttonText15authorizedBlockySS_S2SyyctF",
-            "moduleName": "UIKKit",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "checkContact",
-            "printedName": "checkContact(title:message:buttonText:authorizedBlock:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "hasDefaultArg": true,
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "hasDefaultArg": true,
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "hasDefaultArg": true,
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "() -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:6UIKKit0A6HelperC12checkContact5title7message10buttonText15authorizedBlockySS_S2SyyctF",
-            "mangledName": "$s6UIKKit0A6HelperC12checkContact5title7message10buttonText15authorizedBlockySS_S2SyyctF",
-            "moduleName": "UIKKit",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -704,23 +359,6 @@
         "declAttributes": [
           "RawDocComment"
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "UIKKit",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "ContactsUI",
-        "printedName": "ContactsUI",
-        "declKind": "Import",
-        "moduleName": "UIKKit"
       },
       {
         "kind": "Import",
@@ -999,23 +637,6 @@
         ]
       },
       {
-        "kind": "Import",
-        "name": "AVFoundation",
-        "printedName": "AVFoundation",
-        "declKind": "Import",
-        "moduleName": "UIKKit"
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "UIKKit",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
         "kind": "TypeDecl",
         "name": "KTextField",
         "printedName": "KTextField",
@@ -1280,6 +901,16 @@
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
           }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "UIKKit",
+        "declAttributes": [
+          "RawDocComment"
         ]
       },
       {
@@ -1774,6 +1405,94 @@
         "name": "KTableViewCell",
         "printedName": "KTableViewCell",
         "children": [
+          {
+            "kind": "Var",
+            "name": "emailViewCorner",
+            "printedName": "emailViewCorner",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6UIKKit14KTableViewCellC05emailC6Corner14CoreFoundation7CGFloatVvp",
+            "mangledName": "$s6UIKKit14KTableViewCellC05emailC6Corner12CoreGraphics7CGFloatVvp",
+            "moduleName": "UIKKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6UIKKit14KTableViewCellC05emailC6Corner14CoreFoundation7CGFloatVvg",
+                "mangledName": "$s6UIKKit14KTableViewCellC05emailC6Corner12CoreGraphics7CGFloatVvg",
+                "moduleName": "UIKKit",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6UIKKit14KTableViewCellC05emailC6Corner14CoreFoundation7CGFloatVvs",
+                "mangledName": "$s6UIKKit14KTableViewCellC05emailC6Corner12CoreGraphics7CGFloatVvs",
+                "moduleName": "UIKKit",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6UIKKit14KTableViewCellC05emailC6Corner14CoreFoundation7CGFloatVvM",
+                "mangledName": "$s6UIKKit14KTableViewCellC05emailC6Corner12CoreGraphics7CGFloatVvM",
+                "moduleName": "UIKKit",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
           {
             "kind": "Var",
             "name": "cellEmailOffsetX",
@@ -2786,6 +2505,122 @@
                 "mangledName": "$s6UIKKit14KTableViewCellC14emailLineColorSo7UIColorCvM",
                 "moduleName": "UIKKit",
                 "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "contentTextFiled",
+            "printedName": "contentTextFiled",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UITextField?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UITextField",
+                    "printedName": "UIKit.UITextField",
+                    "usr": "c:objc(cs)UITextField"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:6UIKKit14KTableViewCellC16contentTextFiledSo11UITextFieldCSgvp",
+            "mangledName": "$s6UIKKit14KTableViewCellC16contentTextFiledSo11UITextFieldCSgvp",
+            "moduleName": "UIKKit",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Preconcurrency",
+              "Custom",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UITextField?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UITextField",
+                        "printedName": "UIKit.UITextField",
+                        "usr": "c:objc(cs)UITextField"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6UIKKit14KTableViewCellC16contentTextFiledSo11UITextFieldCSgvg",
+                "mangledName": "$s6UIKKit14KTableViewCellC16contentTextFiledSo11UITextFieldCSgvg",
+                "moduleName": "UIKKit",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UITextField?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UITextField",
+                        "printedName": "UIKit.UITextField",
+                        "usr": "c:objc(cs)UITextField"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6UIKKit14KTableViewCellC16contentTextFiledSo11UITextFieldCSgvs",
+                "mangledName": "$s6UIKKit14KTableViewCellC16contentTextFiledSo11UITextFieldCSgvs",
+                "moduleName": "UIKKit",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:6UIKKit14KTableViewCellC16contentTextFiledSo11UITextFieldCSgvM",
+                "mangledName": "$s6UIKKit14KTableViewCellC16contentTextFiledSo11UITextFieldCSgvM",
+                "moduleName": "UIKKit",
+                "implicit": true,
+                "isOpen": true,
                 "accessorKind": "_modify"
               }
             ]
@@ -7072,8 +6907,8 @@
           },
           {
             "kind": "Var",
-            "name": "getUsedMemorySize",
-            "printedName": "getUsedMemorySize",
+            "name": "getCurrentUsedMemory",
+            "printedName": "getCurrentUsedMemory",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -7083,8 +6918,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:So8UIDeviceC6UIKKitE17getUsedMemorySizeSivpZ",
-            "mangledName": "$sSo8UIDeviceC6UIKKitE17getUsedMemorySizeSivpZ",
+            "usr": "s:So8UIDeviceC6UIKKitE20getCurrentUsedMemorySivpZ",
+            "mangledName": "$sSo8UIDeviceC6UIKKitE20getCurrentUsedMemorySivpZ",
             "moduleName": "UIKKit",
             "static": true,
             "declAttributes": [
@@ -7107,8 +6942,57 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:So8UIDeviceC6UIKKitE17getUsedMemorySizeSivgZ",
-                "mangledName": "$sSo8UIDeviceC6UIKKitE17getUsedMemorySizeSivgZ",
+                "usr": "s:So8UIDeviceC6UIKKitE20getCurrentUsedMemorySivgZ",
+                "mangledName": "$sSo8UIDeviceC6UIKKitE20getCurrentUsedMemorySivgZ",
+                "moduleName": "UIKKit",
+                "static": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "getFreeMemory",
+            "printedName": "getFreeMemory",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:So8UIDeviceC6UIKKitE13getFreeMemorySivpZ",
+            "mangledName": "$sSo8UIDeviceC6UIKKitE13getFreeMemorySivpZ",
+            "moduleName": "UIKKit",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "Preconcurrency",
+              "Custom"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:So8UIDeviceC6UIKKitE13getFreeMemorySivgZ",
+                "mangledName": "$sSo8UIDeviceC6UIKKitE13getFreeMemorySivgZ",
                 "moduleName": "UIKKit",
                 "static": true,
                 "declAttributes": [
@@ -11173,104 +11057,6 @@
             "printedName": "CVarArg",
             "usr": "s:s7CVarArgP",
             "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Transferable",
-            "printedName": "Transferable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "Representation",
-                "printedName": "Representation",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "OpaqueTypeArchetype",
-                    "printedName": "some CoreTransferable.TransferRepresentation",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "TransferRepresentation",
-                        "printedName": "CoreTransferable.TransferRepresentation",
-                        "usr": "s:16CoreTransferable22TransferRepresentationP"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "usr": "s:16CoreTransferable0B0P",
-            "mangledName": "$s16CoreTransferable0B0P"
-          },
-          {
-            "kind": "Conformance",
-            "name": "EntityIdentifierConvertible",
-            "printedName": "EntityIdentifierConvertible",
-            "usr": "s:10AppIntents27EntityIdentifierConvertibleP",
-            "mangledName": "$s10AppIntents27EntityIdentifierConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomURLRepresentationParameterConvertible",
-            "printedName": "CustomURLRepresentationParameterConvertible",
-            "usr": "s:10AppIntents43CustomURLRepresentationParameterConvertibleP",
-            "mangledName": "$s10AppIntents43CustomURLRepresentationParameterConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_IntentValue",
-            "printedName": "_IntentValue",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "ValueType",
-                "printedName": "ValueType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ]
-              },
-              {
-                "kind": "TypeWitness",
-                "name": "UnwrappedType",
-                "printedName": "UnwrappedType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ]
-              },
-              {
-                "kind": "TypeWitness",
-                "name": "Specification",
-                "printedName": "Specification",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "OpaqueTypeArchetype",
-                    "printedName": "some AppIntents.ResolverSpecification",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ResolverSpecification",
-                        "printedName": "AppIntents.ResolverSpecification",
-                        "usr": "s:10AppIntents21ResolverSpecificationP"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "usr": "s:10AppIntents12_IntentValueP",
-            "mangledName": "$s10AppIntents12_IntentValueP"
           }
         ]
       },
@@ -11974,6 +11760,146 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "UIImage",
+        "printedName": "UIImage",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "compress",
+            "printedName": "compress(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Data?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So7UIImageC6UIKKitE8compress2to10Foundation4DataVSgSi_tF",
+            "mangledName": "$sSo7UIImageC6UIKKitE8compress2to10Foundation4DataVSgSi_tF",
+            "moduleName": "UIKKit",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)UIImage",
+        "moduleName": "UIKit",
+        "isOpen": true,
+        "intro_iOS": "2.0",
+        "objc_name": "UIImage",
+        "declAttributes": [
+          "Available",
+          "ObjC",
+          "SynthesizedProtocol",
+          "NonSendable",
+          "Sendable",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ExpressibleByImageLiteral",
+            "printedName": "_ExpressibleByImageLiteral",
+            "usr": "s:s26_ExpressibleByImageLiteralP",
+            "mangledName": "$ss26_ExpressibleByImageLiteralP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "CGFloat",
         "printedName": "CGFloat",
         "children": [
@@ -12448,57 +12374,6 @@
             ],
             "usr": "s:s21_ObjectiveCBridgeableP",
             "mangledName": "$ss21_ObjectiveCBridgeableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_FormatSpecifiable",
-            "printedName": "_FormatSpecifiable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "_Arg",
-                "printedName": "_Arg",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "CGFloat",
-                    "printedName": "CoreGraphics.CGFloat",
-                    "usr": "s:14CoreFoundation7CGFloatV"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:7SwiftUI18_FormatSpecifiableP",
-            "mangledName": "$s7SwiftUI18_FormatSpecifiableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "VectorArithmetic",
-            "printedName": "VectorArithmetic",
-            "usr": "s:7SwiftUI16VectorArithmeticP",
-            "mangledName": "$s7SwiftUI16VectorArithmeticP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Animatable",
-            "printedName": "Animatable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "AnimatableData",
-                "printedName": "AnimatableData",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "CGFloat",
-                    "printedName": "CoreGraphics.CGFloat",
-                    "usr": "s:14CoreFoundation7CGFloatV"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:7SwiftUI10AnimatableP",
-            "mangledName": "$s7SwiftUI10AnimatableP"
           }
         ]
       },
@@ -12545,6 +12420,25 @@
                 "accessorKind": "get"
               }
             ]
+          },
+          {
+            "kind": "Function",
+            "name": "kScale",
+            "printedName": "kScale()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:Si6UIKKitE6kScale14CoreFoundation7CGFloatVyF",
+            "mangledName": "$sSi6UIKKitE6kScale12CoreGraphics7CGFloatVyF",
+            "moduleName": "UIKKit",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Struct",
@@ -12941,104 +12835,6 @@
             ],
             "usr": "s:s21_ObjectiveCBridgeableP",
             "mangledName": "$ss21_ObjectiveCBridgeableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_FormatSpecifiable",
-            "printedName": "_FormatSpecifiable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "_Arg",
-                "printedName": "_Arg",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int64",
-                    "printedName": "Swift.Int64",
-                    "usr": "s:s5Int64V"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:7SwiftUI18_FormatSpecifiableP",
-            "mangledName": "$s7SwiftUI18_FormatSpecifiableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "EntityIdentifierConvertible",
-            "printedName": "EntityIdentifierConvertible",
-            "usr": "s:10AppIntents27EntityIdentifierConvertibleP",
-            "mangledName": "$s10AppIntents27EntityIdentifierConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_IntentValue",
-            "printedName": "_IntentValue",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "ValueType",
-                "printedName": "ValueType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ]
-              },
-              {
-                "kind": "TypeWitness",
-                "name": "UnwrappedType",
-                "printedName": "UnwrappedType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ]
-              },
-              {
-                "kind": "TypeWitness",
-                "name": "Specification",
-                "printedName": "Specification",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "OpaqueTypeArchetype",
-                    "printedName": "some AppIntents.ResolverSpecification",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ResolverSpecification",
-                        "printedName": "AppIntents.ResolverSpecification",
-                        "usr": "s:10AppIntents21ResolverSpecificationP"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "usr": "s:10AppIntents12_IntentValueP",
-            "mangledName": "$s10AppIntents12_IntentValueP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "RangeComparableProperty",
-            "printedName": "RangeComparableProperty",
-            "usr": "s:10AppIntents23RangeComparablePropertyP",
-            "mangledName": "$s10AppIntents23RangeComparablePropertyP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomURLRepresentationParameterConvertible",
-            "printedName": "CustomURLRepresentationParameterConvertible",
-            "usr": "s:10AppIntents43CustomURLRepresentationParameterConvertibleP",
-            "mangledName": "$s10AppIntents43CustomURLRepresentationParameterConvertibleP"
           }
         ]
       },
@@ -13513,28 +13309,6 @@
             ],
             "usr": "s:s21_ObjectiveCBridgeableP",
             "mangledName": "$ss21_ObjectiveCBridgeableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_FormatSpecifiable",
-            "printedName": "_FormatSpecifiable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "_Arg",
-                "printedName": "_Arg",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int64",
-                    "printedName": "Swift.Int64",
-                    "usr": "s:s5Int64V"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:7SwiftUI18_FormatSpecifiableP",
-            "mangledName": "$s7SwiftUI18_FormatSpecifiableP"
           }
         ]
       },
@@ -14002,28 +13776,6 @@
             ],
             "usr": "s:s21_ObjectiveCBridgeableP",
             "mangledName": "$ss21_ObjectiveCBridgeableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_FormatSpecifiable",
-            "printedName": "_FormatSpecifiable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "_Arg",
-                "printedName": "_Arg",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UInt64",
-                    "printedName": "Swift.UInt64",
-                    "usr": "s:s6UInt64V"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:7SwiftUI18_FormatSpecifiableP",
-            "mangledName": "$s7SwiftUI18_FormatSpecifiableP"
           }
         ]
       },
@@ -15029,98 +14781,14 @@
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Public\/UIKitManager.swift",
       "kind": "StringLiteral",
-      "offset": 868,
-      "length": 12,
-      "value": "\"Open Album\""
-    },
-    {
-      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Public\/UIKitManager.swift",
-      "kind": "StringLiteral",
-      "offset": 901,
-      "length": 13,
-      "value": "\"Open Camera\""
-    },
-    {
-      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Public\/UIKitManager.swift",
-      "kind": "StringLiteral",
-      "offset": 936,
-      "length": 8,
-      "value": "\"Cancel\""
-    },
-    {
-      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Public\/UIKitManager.swift",
-      "kind": "StringLiteral",
-      "offset": 1701,
+      "offset": 871,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Public\/UIKitManager.swift",
       "kind": "StringLiteral",
-      "offset": 1722,
-      "length": 4,
-      "value": "\"OK\""
-    },
-    {
-      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Public\/UIKitManager.swift",
-      "kind": "StringLiteral",
-      "offset": 2755,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Public\/UIKitManager.swift",
-      "kind": "StringLiteral",
-      "offset": 2773,
-      "length": 41,
-      "value": "\"Please enable camera access in Settings\""
-    },
-    {
-      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Public\/UIKitManager.swift",
-      "kind": "StringLiteral",
-      "offset": 2833,
-      "length": 4,
-      "value": "\"OK\""
-    },
-    {
-      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Public\/UIKitManager.swift",
-      "kind": "StringLiteral",
-      "offset": 3104,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Public\/UIKitManager.swift",
-      "kind": "StringLiteral",
-      "offset": 3122,
-      "length": 77,
-      "value": "\"Allow location access to help verify your details and protect your account.\""
-    },
-    {
-      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Public\/UIKitManager.swift",
-      "kind": "StringLiteral",
-      "offset": 3218,
-      "length": 4,
-      "value": "\"OK\""
-    },
-    {
-      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Public\/UIKitManager.swift",
-      "kind": "StringLiteral",
-      "offset": 3485,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Public\/UIKitManager.swift",
-      "kind": "StringLiteral",
-      "offset": 3503,
-      "length": 76,
-      "value": "\"If you want to set contacts, you can allow the app to use this permission.\""
-    },
-    {
-      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Public\/UIKitManager.swift",
-      "kind": "StringLiteral",
-      "offset": 3598,
+      "offset": 892,
       "length": 4,
       "value": "\"OK\""
     },
@@ -15146,51 +14814,16 @@
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Private\/PhotoPickerHelper.swift",
-      "kind": "StringLiteral",
-      "offset": 324,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Private\/PhotoPickerHelper.swift",
-      "kind": "StringLiteral",
-      "offset": 355,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Private\/PhotoPickerHelper.swift",
-      "kind": "StringLiteral",
-      "offset": 386,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Private\/PhotoPickerHelper.swift",
-      "kind": "StringLiteral",
-      "offset": 698,
-      "length": 12,
-      "value": "\"Open Album\""
-    },
-    {
-      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Private\/PhotoPickerHelper.swift",
-      "kind": "StringLiteral",
-      "offset": 732,
-      "length": 13,
-      "value": "\"Open Camera\""
-    },
-    {
-      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Private\/PhotoPickerHelper.swift",
-      "kind": "StringLiteral",
-      "offset": 767,
-      "length": 8,
-      "value": "\"Cancel\""
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Helper\/RouterHelper.swift",
+      "kind": "BooleanLiteral",
+      "offset": 198,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/KDevice.swift",
       "kind": "BooleanLiteral",
-      "offset": 9611,
+      "offset": 10336,
       "length": 4,
       "value": "true"
     },
@@ -15204,112 +14837,112 @@
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/KTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 224,
+      "offset": 223,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/KTableViewCell.swift",
+      "kind": "IntegerLiteral",
+      "offset": 267,
       "length": 2,
       "value": "72"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/KTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 270,
+      "offset": 313,
       "length": 2,
       "value": "48"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/KTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 320,
+      "offset": 363,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/KTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 527,
+      "offset": 570,
       "length": 19,
       "value": "\"PingFangSC-Medium\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/KTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 554,
+      "offset": 597,
       "length": 2,
       "value": "13"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/KTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 605,
+      "offset": 648,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/KTableViewCell.swift",
       "kind": "Array",
-      "offset": 652,
+      "offset": 695,
       "length": 59,
       "value": "[\"@gmail.com\", \"@icloud.com\", \"@yahoo.com\", \"@outlook.com\"]"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/KTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 747,
+      "offset": 790,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/KTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 805,
+      "offset": 848,
       "length": 9,
       "value": "\"#EEF0F4\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/KTableViewCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 922,
+      "offset": 1004,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/KTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 1149,
+      "offset": 1189,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/KTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 1196,
+      "offset": 1236,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/KTableViewCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 1225,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/KTableViewCell.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1320,
+      "offset": 1265,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/KTableViewCell.swift",
       "kind": "StringLiteral",
-      "offset": 1370,
+      "offset": 1424,
       "length": 9,
       "value": "\"#0B2C04\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/KTableViewCell.swift",
       "kind": "FloatLiteral",
-      "offset": 1390,
+      "offset": 1444,
       "length": 4,
       "value": "0.15"
     },
@@ -15421,56 +15054,49 @@
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/KToast.swift",
       "kind": "IntegerLiteral",
-      "offset": 711,
-      "length": 8,
-      "value": "20250605"
-    },
-    {
-      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/KToast.swift",
-      "kind": "IntegerLiteral",
-      "offset": 925,
+      "offset": 827,
       "length": 8,
       "value": "20250605"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/KToast.swift",
       "kind": "BooleanLiteral",
-      "offset": 989,
+      "offset": 887,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/KToast.swift",
       "kind": "IntegerLiteral",
-      "offset": 1098,
+      "offset": 984,
       "length": 2,
       "value": "80"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/KToast.swift",
       "kind": "IntegerLiteral",
-      "offset": 1183,
+      "offset": 1065,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/KToast.swift",
       "kind": "IntegerLiteral",
-      "offset": 1217,
+      "offset": 1099,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/KToast.swift",
       "kind": "FloatLiteral",
-      "offset": 1327,
+      "offset": 1205,
       "length": 3,
       "value": "0.6"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/KToast.swift",
       "kind": "IntegerLiteral",
-      "offset": 1375,
+      "offset": 1249,
       "length": 2,
       "value": "12"
     },
@@ -15791,267 +15417,274 @@
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
+      "kind": "IntegerLiteral",
+      "offset": 20563,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
       "kind": "FloatLiteral",
-      "offset": 22493,
+      "offset": 23083,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
       "kind": "FloatLiteral",
-      "offset": 22539,
+      "offset": 23129,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
       "kind": "FloatLiteral",
-      "offset": 22555,
+      "offset": 23145,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
       "kind": "FloatLiteral",
-      "offset": 22570,
+      "offset": 23160,
       "length": 5,
       "value": "255.0"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
       "kind": "FloatLiteral",
-      "offset": 22649,
+      "offset": 23239,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 25136,
+      "offset": 25726,
       "length": 10,
       "value": "\"$\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 25174,
+      "offset": 25764,
       "length": 10,
       "value": "\"€\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 25216,
+      "offset": 25806,
       "length": 10,
       "value": "\"£\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 25254,
+      "offset": 25844,
       "length": 10,
       "value": "\"¥\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 25294,
+      "offset": 25884,
       "length": 10,
       "value": "\"₹\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 25335,
+      "offset": 25925,
       "length": 10,
       "value": "\"₽\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 25374,
+      "offset": 25964,
       "length": 10,
       "value": "\"₩\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 25415,
+      "offset": 26005,
       "length": 5,
       "value": "\"CHF\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 25452,
+      "offset": 26042,
       "length": 4,
       "value": "\"R$\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 25479,
+      "offset": 26069,
       "length": 3,
       "value": "\"R\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 25516,
+      "offset": 26106,
       "length": 5,
       "value": "\"NT$\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 25544,
+      "offset": 26134,
       "length": 10,
       "value": "\"฿\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 25585,
+      "offset": 26175,
       "length": 10,
       "value": "\"₦\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 25625,
+      "offset": 26215,
       "length": 10,
       "value": "\"₺\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 25667,
+      "offset": 26257,
       "length": 5,
       "value": "\"Kč\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 25704,
+      "offset": 26294,
       "length": 4,
       "value": "\"Ft\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 25738,
+      "offset": 26328,
       "length": 5,
       "value": "\"zł\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 25774,
+      "offset": 26364,
       "length": 4,
       "value": "\"kr\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 25814,
+      "offset": 26404,
       "length": 4,
       "value": "\"kr\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 25843,
+      "offset": 26433,
       "length": 26,
       "value": "\"د.إ\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 25902,
+      "offset": 26492,
       "length": 10,
       "value": "\"﷼\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 25944,
+      "offset": 26534,
       "length": 10,
       "value": "\"₪\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 25990,
+      "offset": 26580,
       "length": 26,
       "value": "\"ج.م\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 26058,
+      "offset": 26648,
       "length": 10,
       "value": "\"₨\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 26098,
+      "offset": 26688,
       "length": 10,
       "value": "\"৳\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 26140,
+      "offset": 26730,
       "length": 4,
       "value": "\"Rp\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 26181,
+      "offset": 26771,
       "length": 10,
       "value": "\"₱\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 26233,
+      "offset": 26823,
       "length": 5,
       "value": "\"₪\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 26276,
+      "offset": 26866,
       "length": 4,
       "value": "\"kn\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 26321,
+      "offset": 26911,
       "length": 4,
       "value": "\"RM\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 26358,
+      "offset": 26948,
       "length": 5,
       "value": "\"฿\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
       "kind": "StringLiteral",
-      "offset": 26400,
+      "offset": 26990,
       "length": 5,
       "value": "\"₺\""
     },
     {
       "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Extension\/UIKKit.swift",
       "kind": "Dictionary",
-      "offset": 26485,
+      "offset": 27075,
       "length": 1262,
       "value": "[(\"United States\", (\"USD\", \"$\")), (\"Eurozone\", (\"EUR\", \"€\")), (\"United Kingdom\", (\"GBP\", \"£\")), (\"Japan\", (\"JPY\", \"¥\")), (\"China\", (\"CNY\", \"¥\")), (\"India\", (\"INR\", \"₹\")), (\"Russia\", (\"RUB\", \"₽\")), (\"South Korea\", (\"KRW\", \"₩\")), (\"Switzerland\", (\"CHF\", \"CHF\")), (\"Brazil\", (\"BRL\", \"R$\")), (\"South Africa\", (\"ZAR\", \"R\")), (\"Taiwan\", (\"TWD\", \"NT$\")), (\"Thailand\", (\"THB\", \"฿\")), (\"Mexico\", (\"MXN\", \"$\")), (\"Nigeria\", (\"NGN\", \"₦\")), (\"Turkey\", (\"TRY\", \"₺\")), (\"Czech Republic\", (\"CZK\", \"Kč\")), (\"Hungary\", (\"HUF\", \"Ft\")), (\"Poland\", (\"PLN\", \"zł\")), (\"Sweden\", (\"SEK\", \"kr\")), (\"Norway\", (\"NOK\", \"kr\")), (\"United Arab Emirates\", (\"AED\", \"د.إ\")), (\"Saudi Arabia\", (\"SAR\", \"﷼\")), (\"Iran\", (\"IRR\", \"﷼\")), (\"Israel\", (\"ILS\", \"₪\")), (\"Egypt\", (\"EGP\", \"ج.م\")), (\"Pakistan\", (\"PKR\", \"₨\")), (\"Bangladesh\", (\"BDT\", \"৳\")), (\"Indonesia\", (\"IDR\", \"Rp\")), (\"Philippines\", (\"PHP\", \"₱\")), (\"Denmark\", (\"DKK\", \"kr\")), (\"Argentina\", (\"ARS\", \"$\")), (\"Croatia\", (\"HRK\", \"kn\")), (\"Singapore\", (\"SGD\", \"$\")), (\"Malaysia\", (\"MYR\", \"RM\"))]"
     },
@@ -16154,37 +15787,37 @@
       "value": "\"OK\""
     },
     {
-      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Private\/CustomerHelper.swift",
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Private\/FloatingButtonHelper.swift",
       "kind": "IntegerLiteral",
-      "offset": 2665,
+      "offset": 2640,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Private\/CustomerHelper.swift",
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Private\/FloatingButtonHelper.swift",
       "kind": "IntegerLiteral",
-      "offset": 2669,
+      "offset": 2644,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Private\/CustomerHelper.swift",
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Private\/FloatingButtonHelper.swift",
       "kind": "IntegerLiteral",
-      "offset": 2740,
+      "offset": 2715,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Private\/CustomerHelper.swift",
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Private\/FloatingButtonHelper.swift",
       "kind": "IntegerLiteral",
-      "offset": 2786,
+      "offset": 2761,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Private\/CustomerHelper.swift",
+      "filePath": "\/Users\/kiven\/Documents\/Framework_Note\/UIKitManager\/UIKitManager\/Private\/FloatingButtonHelper.swift",
       "kind": "FloatLiteral",
-      "offset": 3145,
+      "offset": 3120,
       "length": 4,
       "value": "0.23"
     },

@@ -7,7 +7,6 @@ import AdSupport
 import AppTrackingTransparency
 import SystemConfiguration.CaptiveNetwork
 import Contacts
-import ContactsUI
 import CoreLocation
 import CoreTelephony
 import Foundation
@@ -24,16 +23,11 @@ import _SwiftConcurrencyShims
   public func setCustom(with imageView: UIKit.UIImageView, didClick: @escaping () -> Swift.Void)
   public func customShow()
   public func customHide()
-  public func getImage(from viewController: UIKit.UIViewController, albumText: Swift.String = "Open Album", cameraText: Swift.String = "Open Camera", cancelText: Swift.String = "Cancel", completion: @escaping (UIKit.UIImage) -> Swift.Void)
-  public func getContact(inViewController vc: UIKit.UIViewController, result: @escaping (_ fullName: Swift.String?, _ phoneNumber: Swift.String?, _ emailAddresses: Swift.String?, _ postalAddresses: Swift.String?) -> Swift.Void)
   public func openSettingAlert(title: Swift.String, message: Swift.String = "", buttonText: Swift.String = "OK")
   public func openShareAppActivities(vc: UIKit.UIViewController, sourceView: UIKit.UIView, file: Any)
   public func openUrl(urlString: Swift.String)
   public func openReview()
   public func call(number: Swift.String)
-  public func checkCamera(title: Swift.String = "", message: Swift.String = "Please enable camera access in Settings", buttonText: Swift.String = "OK", authorizedBlock: @escaping () -> Swift.Void)
-  public func checkLocation(title: Swift.String = "", message: Swift.String = "Allow location access to help verify your details and protect your account.", buttonText: Swift.String = "OK", authorizedBlock: @escaping () -> Swift.Void)
-  public func checkContact(title: Swift.String = "", message: Swift.String = "If you want to set contacts, you can allow the app to use this permission.", buttonText: Swift.String = "OK", authorizedBlock: @escaping () -> Swift.Void)
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers public class DeviceIdHelper : ObjectiveC.NSObject {
@@ -67,7 +61,10 @@ extension UIKit.UIDevice {
   @_Concurrency.MainActor @preconcurrency public static var getTotalMemorySize: Swift.Int {
     get
   }
-  @_Concurrency.MainActor @preconcurrency public static var getUsedMemorySize: Swift.Int {
+  @_Concurrency.MainActor @preconcurrency public static var getCurrentUsedMemory: Swift.Int {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency public static var getFreeMemory: Swift.Int {
     get
   }
   @_Concurrency.MainActor @preconcurrency public static func getAvailableMemorySize() -> Swift.Int
@@ -175,6 +172,7 @@ extension UIKit.UIViewController {
   }
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency open class KTableViewCell : UIKit.UITableViewCell, UIKit.UITextFieldDelegate {
+  @_Concurrency.MainActor @preconcurrency public var emailViewCorner: CoreFoundation.CGFloat
   @_Concurrency.MainActor @preconcurrency public var cellEmailOffsetX: CoreFoundation.CGFloat
   @_Concurrency.MainActor @preconcurrency public var emailButtonHeight: CoreFoundation.CGFloat
   @_Concurrency.MainActor @preconcurrency public var emailButtonLeftMargin: CoreFoundation.CGFloat
@@ -186,6 +184,7 @@ extension UIKit.UIViewController {
   @_Concurrency.MainActor @preconcurrency public var emailFootterArray: [Swift.String]
   @_Concurrency.MainActor @preconcurrency public var emailHasLine: Swift.Bool
   @_Concurrency.MainActor @preconcurrency public var emailLineColor: UIKit.UIColor
+  @_Concurrency.MainActor @preconcurrency open var contentTextFiled: UIKit.UITextField?
   @_Concurrency.MainActor @preconcurrency public var didEndFill: (Swift.String) -> Swift.Void
   @_Concurrency.MainActor @preconcurrency @objc override dynamic open func awakeFromNib()
   @_Concurrency.MainActor @preconcurrency open func setEmailFiled(textFiled: UIKit.UITextField, tableView: UIKit.UITableView)
@@ -300,6 +299,9 @@ extension UIKit.UIButton {
     set
   }
 }
+extension UIKit.UIImage {
+  public func compress(to size: Swift.Int = 2) -> Foundation.Data?
+}
 extension CoreFoundation.CGFloat {
   public var intValue: Swift.Int {
     get
@@ -315,6 +317,7 @@ extension Swift.Int {
   public var stringValue: Swift.String {
     get
   }
+  public func kScale() -> CoreFoundation.CGFloat
 }
 extension Swift.Int64 {
   public var stringValue: Swift.String {

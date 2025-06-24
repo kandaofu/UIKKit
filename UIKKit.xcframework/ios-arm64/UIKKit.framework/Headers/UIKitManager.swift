@@ -18,33 +18,19 @@ public class UIKKitHelper{
     /// customer floating  button init
     /// If it already exists, the image will be refreshed
     public func setCustom(with imageView:UIImageView,didClick:@escaping(()->Void)){
-        CustomerHelper.shared.loadsCustom(with: imageView, didClick: didClick)
+        FloatingButtonHelper.shared.loadsCustom(with: imageView, didClick: didClick)
     }
     
     /// show customer floating  button
     public func customShow(){
-        CustomerHelper.shared.customerView?.show()
+        FloatingButtonHelper.shared.floatingButton?.show()
     }
     
     /// hide customer floating  button
     public func customHide(){
-        CustomerHelper.shared.customerView?.hide()
+        FloatingButtonHelper.shared.floatingButton?.hide()
     }
-    
-    /// getImage form picker
-    public func getImage(from viewController: UIViewController, albumText:String = "Open Album",cameraText:String = "Open Camera", cancelText:String = "Cancel", completion: @escaping (UIImage) -> Void){
-        PhotoPickerHelper.present(from: viewController,albumText: albumText, cameraText:cameraText, cancelText:cancelText) { image in
-            completion(image)
-        }
-    }
-    
-    /// getContactinfo fullName phoneNumber
-    public func getContact(inViewController vc:UIViewController,result:@escaping((_ fullName: String?, _ phoneNumber: String?, _ emailAddresses: String?, _ postalAddresses: String?)->Void)){
-        ContactHelper.present(from: vc) { fullName, phoneNumber, emailAddresses, postalAddresses   in
-            result(fullName, phoneNumber, emailAddresses, postalAddresses)
-        }
-    }
-    
+  
     /// open  system setting page
     public func openSettingAlert(title:String,message:String="",buttonText:String="OK"){
         AlertHelper.openSetting(title: title,message: message,buttonText: buttonText)
@@ -77,23 +63,6 @@ public class UIKKitHelper{
     public func call(number:String){
         openUrl(urlString: "tel:\(number)")
     }
-    
-    /// check Camera authorizationStatus
-    public func checkCamera(title:String="",message:String="Please enable camera access in Settings",buttonText:String="OK",authorizedBlock:@escaping(()->Void)){
-        PrivacyHelper.shared.checkCamera(title: title, message: message, buttonText: buttonText, authorizedBlock: authorizedBlock)
-    }
-    
-    /// check Location authorizationStatus
-    public func checkLocation(title:String="",message:String="Allow location access to help verify your details and protect your account.",buttonText:String="OK",authorizedBlock:@escaping(()->Void)){
-        PrivacyHelper.shared.checkLocation(title: title, message: message, buttonText: buttonText, authorizedBlock: authorizedBlock)
-    }
-
-    /// check Contact authorizationStatus
-    public func checkContact(title:String="",message:String="If you want to set contacts, you can allow the app to use this permission.",buttonText:String="OK",authorizedBlock:@escaping(()->Void)){
-        PrivacyHelper.shared.checkContact(title: title, message: message, buttonText: buttonText, authorizedBlock: authorizedBlock)
-    }
-    
-    
     
     
 }
