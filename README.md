@@ -3,6 +3,7 @@
  -- Extending UIKit to make development easier
 
 
+
 ##** UIKKitHelper
 
   - setFloatingButton: Set the global floating button
@@ -15,6 +16,16 @@
   - openUrl: open url in safari
   - openReview: Store review popup
   - call: Make a call
+  
+  
+  
+##** DeviceIdHelper
+ 
+  - shared
+    - requestIDFA
+    - getIDFA
+    - getIDFV
+  
   
   
 ##** CountdownHelper
@@ -34,6 +45,7 @@ eg:
   - countdownDidFinish
   
   
+  
 ##** KUIViewController
 
 The custom UIViewController class contains the property navigationPopOpen: whether to enable right swipe back. default is true. 
@@ -48,11 +60,13 @@ Alternatively, you can directly call backAction() under the back() method to imp
   *\ Handling WKScriptMessage, custom events
   
   
+  
 ##** KTextField
 
  - onDeleteBackward: Listening for delete actions
  
- var placeHolderColor: Extended setting placeHolderColor
+ - var placeHolderColor: Extended setting placeHolderColor
+ - var isAutoCleanEnabled:Bool=true : Whether to enable text cleaning (remove leading and trailing spaces, merge consecutive spaces)
  
 
 ##** KToast
@@ -64,11 +78,15 @@ Alternatively, you can directly call backAction() under the back() method to imp
  - hideLoading
  
  
- ##** KTableViewCell
+ 
+##** KTableViewCell
  
  *\ Enable custom mailbox completion popup view
  
   - setEmailFiled: 
+    - contentTextFiled: UITextField?
+    - emailFootterArray:[String] = ["@gmail.com", "@icloud.com", "@yahoo.com", "@outlook.com"]
+    - emailViewCorner:CGFloat = 4
     - cellEmailOffsetX:CGFloat = 72
     - emailButtonHeight:CGFloat = 48
     - emailButtonLeftMargin:CGFloat = 14
@@ -77,21 +95,13 @@ Alternatively, you can directly call backAction() under the back() method to imp
     - emailButtonFirstColor:UIColor = .blue
     - emailButtonFont:UIFont = UIFont(name: "PingFangSC-Medium", size: 13)!
     - emailButtontitleLeft:CGFloat = 12
-    - emailFootterArray:[String] = ["@gmail.com", "@icloud.com", "@yahoo.com", "@outlook.com"]
     - emailHasLine:Bool = true
     - emailLineColor:UIColor = UIColor(hex: "#EEF0F4")
     - didEndFill:(_ text:String) -> Void = {_  in}
-    
-    
- ##** DeviceIdHelper
- 
-  - shared
-    - requestIDFA
-    - getIDFA
-    - getIDFV
 
 
- ##** KDatePickerView
+
+##** KDatePickerView
  
   - init(dateString:String?=nil,titleTxt:String?=nil)
     - show
@@ -115,4 +125,34 @@ Alternatively, you can directly call backAction() under the back() method to imp
 
 
 
+##** KRSA
 
+ *\ RSA encryption and decryption
+
+
+
+##** KDatePickerView
+
+
+    - dateStr: String?
+    
+    - titleText: String?
+    - titleColor: UIColor = .black
+    - titleFont: UIFont = UIFont(name: "PingFangSC-Medium", size: 15)!
+    
+    - grayBackgroundColor: UIColor = .black.withAlphaComponent(0.6)
+    - birthdayH: CGFloat = 320
+    - dateTintColor: UIColor = .blue
+    
+    - dateFormatter: String = "dd-MM-yyyy"
+    - maximumDate: String = "31-12-2040"
+    - minimumDate: String = "01-01-1960"
+    
+    - confirmButtonBgColor: UIColor = .blue
+    - confirmButtonHeight: CGFloat = 50
+    - confirmButtonColors: [UIColor] = []
+    - confirmButtonText: String = "Confirm"
+    - confirmButtonTextColor: UIColor = .white
+    - confirmButtonFont: UIFont = UIFont(name: "PingFangSC-Medium", size: 20)!
+    
+    - show
