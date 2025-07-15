@@ -9,14 +9,6 @@
   - setFloatingButton: Set the global floating button
   - floatShow: Show the floating button
   - floatHide: Hide the floating button
-
-  - openSettingAlert: Open the system settings page
-  - openShareAppActivities: Share file resources to external
-  
-  - openUrl: open url in safari
-  - openReview: Store review popup
-  - call: Make a call
-  
   
   
 ##** DeviceIdHelper
